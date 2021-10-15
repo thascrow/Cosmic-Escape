@@ -2,8 +2,8 @@
 <h2>Project Name: Zathuranians</h2>
 <p>Team Members:</p>
 <ul>
-  <li>Agustin - Artist</li>
-  <li>Matt - UI Designer</li>
-  <li>Matteo - </li>
-  <li>Omar</li>
+  <li>Matthew Bowyer - Designer</li>
+  <li>Matteo Curti - Artist</li>
+  <li>Agustin Fernandez - Sound Design & Artist</li>
+  <li>Omar Latreche - Programmer</li>
 </ul>
