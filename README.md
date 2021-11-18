@@ -8,4 +8,4 @@
   <li>Omar Latreche - Programmer</li>
 </ul>
 <br>
-<strong><p>More info on the <a href="wiki/">Wiki page</a></p></strong>
+<strong><p>More info on the <a href="../../wiki/">Wiki page</a></p></strong>
