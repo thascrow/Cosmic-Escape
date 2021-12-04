@@ -1,5 +1,5 @@
 <h1>University Of Greenwich - Year 2 - Group Project</h1>
-<h2>Project Name: Zathuranians</h2>
+<h2>Project Name: Cosmic Escape</h2>
 <p>Team Members:</p>
 <ul>
   <li>Matthew Bowyer - Designer</li>
