@@ -613,7 +613,7 @@ Transform:
   m_GameObject: {fileID: 366766109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalScale: {x: 13, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1568,7 +1568,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254238577}
-  m_LocalRotation: {x: 0.09897817, y: -0.000000008560945, z: 8.515279e-10, w: 0.99508965}
+  m_LocalRotation: {x: 0.09897817, y: 0.000000008560947, z: -8.5152807e-10, w: 0.99508965}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1756,7 +1756,6 @@ GameObject:
   - component: {fileID: 1598308241}
   - component: {fileID: 1598308240}
   - component: {fileID: 1598308239}
-  - component: {fileID: 1598308242}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1822,47 +1821,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598308238}
-  m_LocalRotation: {x: 0.117014244, y: -0.000000017100048, z: 0.0000000020119832, w: 0.99313027}
-  m_LocalPosition: {x: 0, y: 6.5, z: -18}
+  m_LocalRotation: {x: 0.46692687, y: 0, z: 0, w: 0.88429594}
+  m_LocalPosition: {x: 0, y: 60, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1598308242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598308238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  m_LocalEulerAnglesHint: {x: 55.67, y: 0, z: 0}
 --- !u!1 &1628160444
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,10 +2303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9af9dd27946694ab9b01123afce808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  characterController: {fileID: 1955145723}
-  cam: {fileID: 1598308241}
-  rotationSmoothness: 0.1
+  controller: {fileID: 0}
+  playerSpeed: 8
 --- !u!143 &1955145723
 CharacterController:
   m_ObjectHideFlags: 0
