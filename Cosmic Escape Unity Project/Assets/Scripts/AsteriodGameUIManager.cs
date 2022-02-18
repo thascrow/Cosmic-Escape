@@ -6,6 +6,7 @@ using TMPro;
 public class AsteriodGameUIManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI pointsText;
     private float countdownTimer;
     [SerializeField] private float timeLimit;
     private bool timing;
@@ -20,6 +21,12 @@ public class AsteriodGameUIManager : MonoBehaviour
     private void Update()
     {
         UpdateTimer();
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        pointsText.text = gameManager.points.ToString("00.00");
     }
 
     void UpdateTimer()
@@ -32,7 +39,6 @@ public class AsteriodGameUIManager : MonoBehaviour
         else if (countdownTimer <= 0)
         {
             timing = false;
-
             // Select winner
             // give rewards
             // Move onto mainlevel

@@ -7,7 +7,7 @@ public class NavMeshEnemyController : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Transform playerTransform;
-    private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,9 @@ public class NavMeshEnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(playerTransform.position);
+        if(playerTransform != null)
+        {
+            agent.SetDestination(playerTransform.position);
+        }
     }
 }
