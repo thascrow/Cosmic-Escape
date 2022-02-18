@@ -19,9 +19,8 @@ public class GameManager : MonoBehaviour
         gameManager.health -= amount;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GameOver()
     {
-        
+        Time.timeScale = 0;
     }
 }
