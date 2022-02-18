@@ -1047,6 +1047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   playerSpeed: 0
+  mouseSensitivity: 0
 --- !u!143 &541487605
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3448,8 +3449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9af9dd27946694ab9b01123afce808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 1955145723}
   playerSpeed: 0
+  mouseSensitivity: 1000
 --- !u!143 &1955145723
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3706,6 +3708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   playerSpeed: 0
+  mouseSensitivity: 0
 --- !u!143 &1996132876
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3771,6 +3774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   playerSpeed: 0
+  mouseSensitivity: 0
 --- !u!143 &2026545535
 CharacterController:
   m_ObjectHideFlags: 0
