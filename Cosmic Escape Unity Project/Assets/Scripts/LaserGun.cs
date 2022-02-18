@@ -5,25 +5,18 @@ using UnityEngine;
 public class LaserGun : MonoBehaviour
 {
     [SerializeField] private Rigidbody bullet;
-    private float bulletSpeed = 30f;
+    [SerializeField] private float bulletSpeed = 30f;
     [SerializeField] private Transform bulletSpawn;
     private float autoFireTimer = 0f;
-    private int ammo;
+    [SerializeField] private int ammo;
     [SerializeField] private float fireRate;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        bulletSpawn = transform.Find("BulletSpawnPoint");
-        bulletSpawn.rotation = transform.rotation;
-    }
 
     // Update is called once per frame
     void Update()
     {
         if(ammo > 0)
         {
-            AutoFire();        
+            AutoFire();
         }
     }
 
