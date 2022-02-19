@@ -39,6 +39,7 @@ public class AsteriodGameUIManager : MonoBehaviour
         else if (countdownTimer <= 0)
         {
             timing = false;
+            gameManager.GameOver();
             // Select winner
             // give rewards
             // Move onto mainlevel
