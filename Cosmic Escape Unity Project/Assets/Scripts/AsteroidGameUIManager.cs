@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class AsteriodGameUIManager : MonoBehaviour
+public class AsteroidGameUIManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI pointsText;
