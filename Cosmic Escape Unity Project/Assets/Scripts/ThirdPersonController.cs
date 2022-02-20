@@ -7,22 +7,24 @@ public class ThirdPersonController : MonoBehaviour
     [SerializeField] private CharacterController controller;
     private Vector3 playerVelocity;
     [SerializeField] private float playerSpeed;
+    [SerializeField] private float mouseSensitivity;
 
     private void Start()
     {
-        controller = gameObject.GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
+        // move player based on inputs
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         controller.Move(move * Time.deltaTime * playerSpeed);
-
-        if (move != Vector3.zero)
-        {
-            gameObject.transform.forward = move;
-        }
-
         controller.Move(playerVelocity * Time.deltaTime);
-    }
+
+        // rotate player based on inputs
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        gameObject.transform.Rotate(Vector3.up * mouseX);
+
+        
+    } 
 }

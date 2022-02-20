@@ -10,6 +10,8 @@ public class LaserGun : MonoBehaviour
     private float autoFireTimer = 0f;
     [SerializeField] private int ammo;
     [SerializeField] private float fireRate;
+    [SerializeField] private float damage;
+    [SerializeField] private GameManager gameManager;
 
     // Update is called once per frame
     void Update()
@@ -25,6 +27,18 @@ public class LaserGun : MonoBehaviour
         Rigidbody shot;
         shot = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
         shot.velocity = transform.forward * bulletSpeed;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(bulletSpawn.position, transform.forward, out hit))
+        {
+            if (hit.transform.tag == "Enemy")
+            {
+                hit.transform.GetComponent<DamagableCharacter>().DeductHealth(damage);
+                gameManager.points += damage;
+            }
+        }
+
         ammo -= 1;
     }
 

@@ -4,28 +4,25 @@ using UnityEngine;
 
 public class DamagableCharacter : MonoBehaviour
 {
-    [HideInInspector] public int health;
+    [SerializeField] public float health;
+    [SerializeField] GameManager gameManager;
 
-    // Start is called before the first frame update
-    void Start()
+    // Update is called once per frame
+    void Update()
     {
-        health = 100;
-    }
-
-    private void Update()
-    {
-        if(health <= 0)
+        if (health <= 0)
         {
-            die();
+            Destroy(gameObject);
+            if (gameObject.tag == "Player")
+            {
+                gameManager.GameOver();
+            }
         }
+
+        
     }
 
-    public void die()
-    {
-        Destroy(gameObject);
-    }
-
-    public void receiveDamage(int amount)
+    public void DeductHealth(float amount)
     {
         health -= amount;
     }
