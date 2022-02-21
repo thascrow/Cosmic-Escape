@@ -9,10 +9,14 @@ public class SpawnAsteroid : MonoBehaviour
     [SerializeField] private Rigidbody asteroidPrefab;
     private Vector3 newPos;
     [SerializeField] private float asteroidFallSpeed;
+    [SerializeField] private GameObject floor;
+    private float spawnHeight;
 
     private void Start()
     {
-        transform.position = new Vector3(0, Camera.main.transform.position.y - 2, 0);
+        transform.position = new Vector3(0, Camera.main.transform.position.y + 2, 0);
+
+        spawnHeight = transform.position.y;
 
         Spawn();
     }
@@ -33,15 +37,20 @@ public class SpawnAsteroid : MonoBehaviour
     {
         Rigidbody rb;
         rb = Instantiate(asteroidPrefab, GetNewPos(), transform.rotation);
-        rb.transform.position = new Vector3(rb.transform.position.x, transform.position.y, rb.transform.position.z);
+        //rb.transform.position = new Vector3(rb.transform.position.x, transform.position.y, rb.transform.position.z);
         rb.velocity = transform.forward * asteroidFallSpeed;
     }
 
     Vector3 GetNewPos()
     {
-        Vector3 randomPointInCamView = Camera.main.ScreenToWorldPoint(new Vector3(Random.Range(0, Screen.width), 
-            Random.Range(0, Screen.height), Camera.main.farClipPlane / 2));
-        newPos = randomPointInCamView;
+        float floorWidth = floor.transform.localScale.x * 10;
+        float floorHeight = floor.transform.localScale.z * 10;
+
+        float floorRandomWidth = Random.Range(-floorWidth / 2, floorWidth / 2);
+        float floorRandomHeight = Random.Range(-floorHeight / 2, floorHeight / 2);
+
+        Vector3 randomPointOnFloor = new Vector3(floorRandomWidth, transform.position.y, floorRandomHeight);
+        newPos = randomPointOnFloor;
 
         return newPos;
     }

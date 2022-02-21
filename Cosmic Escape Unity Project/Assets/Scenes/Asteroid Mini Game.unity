@@ -382,8 +382,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 80
+  field of view: 78.69738
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -408,13 +408,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100335753}
-  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: 20, z: -10}
+  m_LocalRotation: {x: 0.59398067, y: 0, z: 0, w: 0.80447936}
+  m_LocalPosition: {x: 0, y: 30, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 72.88, y: 0, z: 0}
 --- !u!1 &105012108
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,8 +804,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266390637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.04}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 12.5, y: 1, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2154,12 +2154,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1538855350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6b65255213db7641a139d88487f91e5, type: 3}
+  m_Script: {fileID: 11500000, guid: c1f968cbbd4ad7f4d8396fbecd22c208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 1
+  spawnDelay: 0.1
   asteroidPrefab: {fileID: 48232383096306267, guid: 76f85e365dac56140be96f3f5ef5f86c, type: 3}
-  asteroidFallSpeed: 100
+  asteroidFallSpeed: 50
+  floor: {fileID: 266390637}
 --- !u!4 &1538855352
 Transform:
   m_ObjectHideFlags: 0
