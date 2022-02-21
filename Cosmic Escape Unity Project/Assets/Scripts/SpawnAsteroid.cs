@@ -14,7 +14,7 @@ public class SpawnAsteroid : MonoBehaviour
 
     private void Start()
     {
-        transform.position = new Vector3(0, Camera.main.transform.position.y + 2, 0);
+        transform.position = new Vector3(0, Camera.main.transform.position.y * 3, 0);
 
         Spawn();
     }

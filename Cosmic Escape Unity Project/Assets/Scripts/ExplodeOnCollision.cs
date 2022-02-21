@@ -11,7 +11,7 @@ public class ExplodeOnCollision : MonoBehaviour
     {
         if(collision != null)
         {
-            if ((collision.gameObject.name == triggerObject) || (collision.gameObject.tag == "Enemy"))
+            if ((collision.gameObject.name == triggerObject) || (collision.gameObject.tag == "Enemy") || (collision.gameObject.tag == "Player"))
             {
                 Instantiate(explosionEffect, transform.position, transform.rotation);
 
