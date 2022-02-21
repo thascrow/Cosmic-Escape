@@ -6,11 +6,11 @@ public class AsteroidDamage : MonoBehaviour
 {
     [SerializeField] private DamagableCharacter damagableCharacter;
 
-    private void OnTriggerEnter(Collider collider)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collider != null)
+        if (collision != null)
         {
-            if (collider.tag == "Enemy")
+            if (collision.gameObject.tag == "Enemy")
             {
                 damagableCharacter.DeductHealth(50);
             }
