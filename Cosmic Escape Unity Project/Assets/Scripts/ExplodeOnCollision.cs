@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExplodeOnCollision : MonoBehaviour
 {
     [SerializeField] private string triggerObject;
+    [SerializeReference] private GameObject explosionEffect;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -12,7 +13,7 @@ public class ExplodeOnCollision : MonoBehaviour
         {
             if (collision.gameObject.name == triggerObject)
             {
-                // explode effect
+                Instantiate(explosionEffect, transform.position, transform.rotation);
 
                 Destroy(gameObject);
             }
