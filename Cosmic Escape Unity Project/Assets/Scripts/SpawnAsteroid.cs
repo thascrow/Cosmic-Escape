@@ -10,13 +10,10 @@ public class SpawnAsteroid : MonoBehaviour
     private Vector3 newPos;
     [SerializeField] private float asteroidFallSpeed;
     [SerializeField] private GameObject floor;
-    private float spawnHeight;
 
     private void Start()
     {
         transform.position = new Vector3(0, Camera.main.transform.position.y + 2, 0);
-
-        spawnHeight = transform.position.y;
 
         Spawn();
     }
@@ -37,7 +34,6 @@ public class SpawnAsteroid : MonoBehaviour
     {
         Rigidbody rb;
         rb = Instantiate(asteroidPrefab, GetNewPos(), transform.rotation);
-        //rb.transform.position = new Vector3(rb.transform.position.x, transform.position.y, rb.transform.position.z);
         rb.velocity = transform.forward * asteroidFallSpeed;
     }
 
