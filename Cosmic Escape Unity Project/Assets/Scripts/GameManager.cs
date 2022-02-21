@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        print("Game over triggered!");
         gameOverUI.SetActive(true);
         Time.timeScale = 0;
     }
