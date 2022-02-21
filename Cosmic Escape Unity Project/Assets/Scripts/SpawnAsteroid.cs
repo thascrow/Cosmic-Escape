@@ -10,6 +10,7 @@ public class SpawnAsteroid : MonoBehaviour
     private Vector3 newPos;
     [SerializeField] private float asteroidFallSpeed;
     [SerializeField] private GameObject floor;
+    [SerializeField] private GameManager gameManager;
 
     private void Start()
     {
@@ -35,6 +36,8 @@ public class SpawnAsteroid : MonoBehaviour
         Rigidbody rb;
         rb = Instantiate(asteroidPrefab, GetNewPos(), transform.rotation);
         rb.velocity = transform.forward * asteroidFallSpeed;
+
+        gameManager.points += 1.11f;
     }
 
     Vector3 GetNewPos()

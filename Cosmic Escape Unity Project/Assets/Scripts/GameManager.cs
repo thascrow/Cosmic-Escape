@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public static GameManager gameManager;
     [SerializeField] public Transform playerTransform;
     [SerializeField] private GameObject gameOverUI;
-    public float points;
+    [HideInInspector] public float points;
 
     public void GameOver()
     {

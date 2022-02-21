@@ -2396,6 +2396,7 @@ MonoBehaviour:
   asteroidPrefab: {fileID: 48232383096306267, guid: 76f85e365dac56140be96f3f5ef5f86c, type: 3}
   asteroidFallSpeed: 50
   floor: {fileID: 266390637}
+  gameManager: {fileID: 446035334}
 --- !u!4 &1538855352
 Transform:
   m_ObjectHideFlags: 0
