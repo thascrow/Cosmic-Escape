@@ -408,13 +408,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100335753}
-  m_LocalRotation: {x: 0.59130967, y: 0, z: 0, w: 0.8064446}
-  m_LocalPosition: {x: 0, y: 45, z: -19.5}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 8, z: -15.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 72.5, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &105012108
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +939,7 @@ Transform:
   m_GameObject: {fileID: 266390637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12.5, y: 1, z: 6}
+  m_LocalScale: {x: 5.6, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1104,8 +1104,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376169210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: -2.5}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 0, y: -1.58, z: -0.25}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 2062415655}
   m_RootOrder: 0
@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnDelay: 0.07
   asteroidPrefab: {fileID: 48232383096306267, guid: 76f85e365dac56140be96f3f5ef5f86c, type: 3}
-  asteroidFallSpeed: 50
+  asteroidFallSpeed: 10
   floor: {fileID: 266390637}
   gameManager: {fileID: 446035334}
 --- !u!4 &1538855352
