@@ -11,10 +11,12 @@ public class SpawnAsteroid : MonoBehaviour
     [SerializeField] private float asteroidFallSpeed;
     [SerializeField] private GameObject floor;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private bool spawnAtPlayerPos;
+    [SerializeField] private float spawnPointDistanceFromCamera;
 
     private void Start()
     {
-        transform.position = new Vector3(0, Camera.main.transform.position.y * 3, 0);
+        transform.position = new Vector3(0, Camera.main.transform.position.y * spawnPointDistanceFromCamera, 0);
 
         Spawn();
     }
@@ -34,8 +36,17 @@ public class SpawnAsteroid : MonoBehaviour
     private void Spawn()
     {
         Rigidbody rb;
-        rb = Instantiate(asteroidPrefab, GetNewPos(), transform.rotation);
-        rb.velocity = transform.forward * asteroidFallSpeed;
+
+        if (spawnAtPlayerPos == false)
+        {
+            rb = Instantiate(asteroidPrefab, GetNewPos(), transform.rotation);
+            rb.velocity = transform.forward * asteroidFallSpeed;
+        }
+        else
+        {
+            rb = Instantiate(asteroidPrefab, SpawnAtPlayerPos(), transform.rotation);
+            rb.velocity = transform.forward * asteroidFallSpeed;
+        }
 
         gameManager.points += 1.11f;
     }
@@ -50,6 +61,17 @@ public class SpawnAsteroid : MonoBehaviour
 
         Vector3 randomPointOnFloor = new Vector3(floorRandomWidth, transform.position.y, floorRandomHeight);
         newPos = randomPointOnFloor;
+
+        return newPos;
+    }
+
+    Vector3 SpawnAtPlayerPos()
+    {
+        float playerX = gameManager.playerTransform.transform.position.x;
+        float playerZ = gameManager.playerTransform.transform.position.y;
+
+        Vector3 asteroidAtPlayerPos = new Vector3(playerX, transform.position.y, playerZ);
+        newPos = asteroidAtPlayerPos;
 
         return newPos;
     }
