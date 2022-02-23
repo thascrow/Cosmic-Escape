@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ThirdPersonController : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class ThirdPersonController : MonoBehaviour
     private Vector3 playerVelocity;
     [SerializeField] private float playerSpeed;
     [SerializeField] private float mouseSensitivity;
-
+    
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
