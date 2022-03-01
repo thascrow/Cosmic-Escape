@@ -8,7 +8,11 @@ public class MainMenuController : MonoBehaviour
 {
 
     [SerializeField] GameObject mainMenu, optionMenu;
-    
+
+    private void Start()
+    {
+        
+    }
     public void Option()
     {
         mainMenu.SetActive(false);
