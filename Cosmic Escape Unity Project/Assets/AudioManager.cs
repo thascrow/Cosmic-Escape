@@ -8,8 +8,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip npcShoot;
     [SerializeField] AudioClip pickupSound;
     [SerializeField] AudioClip clickSound;
-    [SerializeField]
-    AudioSource audioSource;
+    [SerializeField] AudioSource audioSource;
     float defaultlevel = 0.4f;
 
     // Start is called before the first frame update

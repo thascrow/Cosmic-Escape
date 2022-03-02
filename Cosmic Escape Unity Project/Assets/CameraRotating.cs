@@ -14,7 +14,7 @@ public class CameraRotating : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Cam.transform.LookAt(Board.transform.position);
 
