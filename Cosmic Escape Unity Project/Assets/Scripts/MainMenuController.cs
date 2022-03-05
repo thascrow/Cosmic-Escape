@@ -42,7 +42,12 @@ public class MainMenuController : MonoBehaviour
         mainMenu.SetActive(false);
         optionMenu.SetActive(true);
     }
-   public void PlayGame()
+    public void OptionBackButton()
+    {
+        mainMenu.SetActive(true);
+        optionMenu.SetActive(false);
+    }
+    public void PlayGame()
     {
         SceneManager.LoadScene(1);
     }
