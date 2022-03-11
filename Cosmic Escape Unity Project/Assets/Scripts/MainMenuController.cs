@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour
 {
 
-    [SerializeField] GameObject mainMenu, optionMenu;
+    [SerializeField] GameObject mainMenu, optionMenu, creditsMenu;
     [SerializeField] Slider volumeSlider;
     [SerializeField] AudioSource mainMenuVolume;
     [SerializeField] Dropdown resolutionDropdown;
@@ -36,7 +36,17 @@ public class MainMenuController : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
-  
+
+    public void Credits()
+    {
+        mainMenu.SetActive(false);
+        creditsMenu.SetActive(true);
+    }
+    public void CreditsBackButton()
+    {
+        mainMenu.SetActive(true);
+        creditsMenu.SetActive(false);
+    }
     public void Option()
     {
         mainMenu.SetActive(false);
