@@ -40,8 +40,8 @@ public class ThirdPersonController : MonoBehaviour
             controller.Move(-playerVelocity * Time.deltaTime);
             float mouseX = Input.GetAxis("XRotation2") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("YRotation2") * mouseSensitivity * Time.deltaTime;
-            gameObject.transform.Rotate(Vector3.up * mouseX);
-            gameObject.transform.Rotate(Vector3.up * mouseY);
+           
+            gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
 
         }
        
