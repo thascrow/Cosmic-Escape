@@ -6,6 +6,11 @@ public class CollectableItem : MonoBehaviour
 {
     [SerializeField] private Inventory inventory;
     public bool PickingUp;
+
+    private void Update()
+    {
+        Debug.Log(PickingUp);
+    }
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
