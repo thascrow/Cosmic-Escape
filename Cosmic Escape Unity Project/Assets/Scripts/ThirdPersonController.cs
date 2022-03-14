@@ -10,6 +10,7 @@ public class ThirdPersonController : MonoBehaviour
     [SerializeField] private float playerSpeed;
     [SerializeField] private float mouseSensitivity;
     [SerializeField] bool player1, player2, player3, player4;
+
     
     private void Start()
     {
@@ -30,20 +31,20 @@ public class ThirdPersonController : MonoBehaviour
             gameObject.transform.Rotate(Vector3.up * mouseY);
 
         }
-        /*
+        
         if (player2)
         {
+            
             Vector3 move2 = new Vector3(Input.GetAxis("Horizontal2"), 0, Input.GetAxis("Vertical2"));
-            controller.Move(move2 * Time.deltaTime * playerSpeed);
+            controller.Move(-move2 * Time.deltaTime * playerSpeed);
             controller.Move(-playerVelocity * Time.deltaTime);
+            float mouseX = Input.GetAxis("XRotation2") * mouseSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("YRotation2") * mouseSensitivity * Time.deltaTime;
+           
+            gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
 
         }
-        */
-        if (Input.GetButton("XRotation1"))
-        {
-            print("Hello");
-            print("Hello");
-        }
+       
 
         if (Input.GetButton("YRotation1"))
         {

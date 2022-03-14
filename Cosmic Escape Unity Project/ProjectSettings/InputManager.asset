@@ -9,13 +9,13 @@ InputManager:
     m_Name: Horizontal1
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: right
-    altNegativeButton: a
-    altPositiveButton: d
+    negativeButton: a
+    positiveButton: d
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
-    dead: 0.001
-    sensitivity: 3
+    dead: 0.19
+    sensitivity: 0.5
     snap: 1
     invert: 1
     type: 2
@@ -25,34 +25,50 @@ InputManager:
     m_Name: Horizontal2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: left
-    positiveButton: right
-    altNegativeButton: a
-    altPositiveButton: d
+    negativeButton: a
+    positiveButton: d
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
-    dead: 0.001
-    sensitivity: 3
+    dead: 0.19
+    sensitivity: 0.5
     snap: 1
-    invert: 0
+    invert: 1
     type: 2
-    axis: 1
-    joyNum: 3
+    axis: 0
+    joyNum: 2
   - serializedVersion: 3
     m_Name: Vertical1
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: down
-    positiveButton: up
-    altNegativeButton: s
-    altPositiveButton: w
+    negativeButton: s
+    positiveButton: w
+    altNegativeButton: 
+    altPositiveButton: 
     gravity: 3
-    dead: 0.001
-    sensitivity: 3
+    dead: 0.19
+    sensitivity: 0.5
     snap: 1
-    invert: 0
+    invert: 1
     type: 2
     axis: 1
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: Vertical2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: s
+    positiveButton: w
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.19
+    sensitivity: 0.5
+    snap: 1
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 2
   - serializedVersion: 3
     m_Name: XRotation1
     descriptiveName: 
@@ -63,7 +79,23 @@ InputManager:
     altPositiveButton: 
     gravity: 3
     dead: 0.001
-    sensitivity: 3
+    sensitivity: 0.5
+    snap: 1
+    invert: 1
+    type: 2
+    axis: 3
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: XRotation2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick button 9
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.19
+    sensitivity: 0.5
     snap: 1
     invert: 0
     type: 2
@@ -79,7 +111,23 @@ InputManager:
     altPositiveButton: 
     gravity: 3
     dead: 0.001
-    sensitivity: 3
+    sensitivity: 0.5
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 4
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: YRotation2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick button 9
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.19
+    sensitivity: 0.5
     snap: 1
     invert: 0
     type: 2
