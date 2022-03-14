@@ -30,7 +30,7 @@ public class LaserGun : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(bulletSpawn.position, transform.forward, out hit))
+        if (Physics.Raycast(bulletSpawn.position, this.transform.forward, out hit))
         {
             if (hit.transform.tag == "Enemy")
             {
@@ -46,11 +46,19 @@ public class LaserGun : MonoBehaviour
     {
         autoFireTimer += Time.deltaTime;
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button1))
         {
             if (autoFireTimer > fireRate)
             {
-                FireShot();
+                this.FireShot();
+                autoFireTimer = 0f;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Joystick2Button1))
+        {
+            if (autoFireTimer > fireRate)
+            {
+                this.FireShot();
                 autoFireTimer = 0f;
             }
         }
