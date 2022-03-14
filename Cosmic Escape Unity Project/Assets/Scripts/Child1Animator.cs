@@ -9,9 +9,11 @@ public class Child1Animator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
         AnimatorManager Anim = new AnimatorManager();
         CollectableItem Coll = new CollectableItem();
-
+        Debug.Log(Coll.PickingUp);
         if (controller.velocity.x > 0 & controller.velocity.z > 0 & controller.velocity.x < 0 & controller.velocity.z < 0)
         {
             Anim.Child1SetWalk();
