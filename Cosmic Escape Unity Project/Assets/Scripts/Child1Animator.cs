@@ -14,10 +14,10 @@ public class Child1Animator : MonoBehaviour
         AnimatorManager Anim = new AnimatorManager();
         CollectableItem Coll = new CollectableItem();
         Debug.Log(Coll.PickingUp);
-        if (controller.velocity.x > 0 & controller.velocity.z > 0 & controller.velocity.x < 0 & controller.velocity.z < 0)
+        if (controller.velocity.x > 0 && controller.velocity.z > 0 && controller.velocity.x < 0 && controller.velocity.z < 0)
         {
             Anim.Child1SetWalk();
-        }
+        } 
 
         if (controller.velocity.x == 0 & controller.velocity.z == 0)
         {
