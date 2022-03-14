@@ -10,15 +10,18 @@ public class ThirdPersonController : MonoBehaviour
     [SerializeField] private float playerSpeed;
     [SerializeField] private float mouseSensitivity;
     [SerializeField] bool player1, player2, player3, player4;
-
+    
     
     private void Start()
     {
+        
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
+
+
         // move player based on inputs
         if (player1)
         {
@@ -29,6 +32,7 @@ public class ThirdPersonController : MonoBehaviour
             float mouseY = Input.GetAxis("YRotation1") * mouseSensitivity * Time.deltaTime;
             gameObject.transform.Rotate(Vector3.up * mouseX);
             gameObject.transform.Rotate(Vector3.up * mouseY);
+
 
         }
         

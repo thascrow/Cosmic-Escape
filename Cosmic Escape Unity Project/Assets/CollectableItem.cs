@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectableItem : MonoBehaviour
 {
     [SerializeField] private Inventory inventory;
-
+    public bool PickingUp;
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
@@ -16,6 +16,12 @@ public class CollectableItem : MonoBehaviour
 
             inventory.items.Add(gameObject);
             gameObject.SetActive(false);
+            PickingUp = true;
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        PickingUp = false;   
     }
 }
