@@ -20,8 +20,5 @@ public class CollectableItem : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        PickingUp = false;   
-    }
+
 }
