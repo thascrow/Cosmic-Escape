@@ -10,13 +10,14 @@ public class CollectableItem : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            PickingUp = true;
             int sizeOfInventory = inventory.items.Count;
 
             inventory.uIElements[sizeOfInventory].gameObject.SetActive(true);
 
             inventory.items.Add(gameObject);
             gameObject.SetActive(false);
-            PickingUp = true;
+          
         }
     }
 
