@@ -7,10 +7,7 @@ public class CollectableItem : MonoBehaviour
     [SerializeField] private Inventory inventory;
     public bool PickingUp;
 
-    private void Update()
-    {
-        Debug.Log(PickingUp);
-    }
+
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
@@ -21,7 +18,8 @@ public class CollectableItem : MonoBehaviour
             inventory.uIElements[sizeOfInventory].gameObject.SetActive(true);
 
             inventory.items.Add(gameObject);
-            gameObject.SetActive(false);
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
           
         }
     }
