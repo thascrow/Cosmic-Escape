@@ -9,7 +9,7 @@ public class ThirdPersonController : MonoBehaviour
     private Vector3 playerVelocity;
     [SerializeField] private float playerSpeed;
     [SerializeField] private float mouseSensitivity;
-    [SerializeField] bool player1, player2, player3, player4;
+    public bool player1, player2, player3, player4;
     
     
     private void Start()

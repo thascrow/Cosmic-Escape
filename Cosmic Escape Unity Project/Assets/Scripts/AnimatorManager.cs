@@ -26,8 +26,8 @@ public class AnimatorManager : MonoBehaviour
 
     public void Child1Idle()
     {
-        Child1.SetBool("PickUp", false);
-        Child1.SetBool("Walk", false);
+        //Child1.SetBool("PickUp", false);
+        //Child1.SetBool("Walk", false);
     }
 
     //

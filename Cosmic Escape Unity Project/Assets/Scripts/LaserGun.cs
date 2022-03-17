@@ -12,7 +12,12 @@ public class LaserGun : MonoBehaviour
     [SerializeField] private float fireRate;
     [SerializeField] private float damage;
     [SerializeField] private GameManager gameManager;
+    ThirdPersonController tp;
 
+    private void Start()
+    {
+        tp = GetComponent<ThirdPersonController>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +30,7 @@ public class LaserGun : MonoBehaviour
     void FireShot()
     {
         Rigidbody shot;
-        shot = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
+        shot = Instantiate(bullet, this.bulletSpawn.position, bulletSpawn.rotation);
         shot.velocity = transform.forward * bulletSpeed;
 
         RaycastHit hit;
@@ -46,8 +51,9 @@ public class LaserGun : MonoBehaviour
     {
         autoFireTimer += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+        if (Input.GetButton("Fire1") && tp.player1 )
         {
+            print("Hello");
             if (autoFireTimer > fireRate)
             {
                 this.FireShot();
