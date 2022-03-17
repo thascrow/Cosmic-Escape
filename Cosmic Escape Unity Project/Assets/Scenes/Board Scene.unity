@@ -3013,7 +3013,7 @@ MonoBehaviour:
   points: 0
   board: {fileID: 1689334659}
   cam: {fileID: 1030088193}
-  boardGameUIManager: {fileID: 0}
+  boardGameUIManager: {fileID: 1411240519}
   player1HousePoints: 0
   player2HousePoints: 0
   player3HousePoints: 0
