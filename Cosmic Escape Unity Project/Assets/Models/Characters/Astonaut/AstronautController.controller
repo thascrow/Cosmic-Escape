@@ -151,6 +151,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: PickUp
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Walk
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7208581623095025926}
   m_Solo: 0
@@ -263,7 +266,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PickUp
-  m_Speed: 1
+  m_Speed: 12
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4751028344164310597}
@@ -277,7 +280,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 76d1697c6c2c87749916c113220d8e5e, type: 2}
+  m_Motion: {fileID: 1827226128182048838, guid: 1103bb9b6453f7f4abe14e7213e07ede, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -305,7 +308,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 43f0ca93a7211744ab18624c30c2f2e5, type: 2}
+  m_Motion: {fileID: 1827226128182048838, guid: aae9132573a78834fabefc31c9c19f7e, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
