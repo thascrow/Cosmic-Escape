@@ -26,7 +26,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0
     animationPositionError: 0
     animationScaleError: 0
@@ -108,8 +108,314 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: Astronaut1_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Astronaut1_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: AstronautWGun(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Astronaut_Char
+      parentName: AstronautWGun(Clone)
+      position: {x: -2.543069, y: 0.0059745633, z: 2.0687935}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9817516, y: 0.9817516, z: 0.9817516}
+    - name: Astronaut1_Reference
+      parentName: AstronautWGun(Clone)
+      position: {x: -2.5281641, y: 0.08748093, z: 2.320709}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Astronaut1_Hips
+      parentName: Astronaut1_Reference
+      position: {x: 2.5281641, y: 0.15832347, z: -2.31468}
+      rotation: {x: 0.5354319, y: -0.4618579, z: -0.53543186, w: 0.4618579}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Astronaut1_LeftUpLeg
+      parentName: Astronaut1_Hips
+      position: {x: 0.034819808, y: -0.0005509415, z: 0.03572692}
+      rotation: {x: 0.010655269, y: 0.011984691, z: 0.9886765, w: -0.14920372}
+      scale: {x: 1.0000001, y: 1, z: 1.0000005}
+    - name: Astronaut1_LeftLeg
+      parentName: Astronaut1_LeftUpLeg
+      position: {x: -0.08048886, y: -0.00034505624, z: -0.00015352416}
+      rotation: {x: -0.006369748, y: 0.0059592393, z: -0.30897757, w: 0.9510293}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Astronaut1_LeftFoot
+      parentName: Astronaut1_LeftLeg
+      position: {x: -0.06390469, y: -0.0000000060707652, z: 0.000000007776515}
+      rotation: {x: -0.005373426, y: 0.0026009863, z: 0.52570236, w: 0.8506476}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000002}
+    - name: Astronaut1_LeftToeBase
+      parentName: Astronaut1_LeftFoot
+      position: {x: -0.08543148, y: -0.00000000814311, z: 0.00000030875478}
+      rotation: {x: 0.00000002142042, y: -0.0000000721775, z: 0.000000029576768, w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000001}
+    - name: Astronaut1_RightUpLeg
+      parentName: Astronaut1_Hips
+      position: {x: 0.03481983, y: -0.00055093504, z: -0.03572708}
+      rotation: {x: 0.011988789, y: -0.010654762, z: 0.14919284, w: 0.98867804}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: Astronaut1_RightLeg
+      parentName: Astronaut1_RightUpLeg
+      position: {x: 0.08048977, y: 0.0000024645315, z: -0.000033232085}
+      rotation: {x: -0.006360496, y: 0.005952798, z: -0.30896622, w: 0.9510331}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000005}
+    - name: Astronaut1_RightFoot
+      parentName: Astronaut1_RightLeg
+      position: {x: 0.063904725, y: -0.000000047693128, z: 0.000000017419685}
+      rotation: {x: -0.005385355, y: 0.002610393, z: 0.5257023, w: 0.85064757}
+      scale: {x: 1, y: 1.0000004, z: 1.0000001}
+    - name: Astronaut1_RightToeBase
+      parentName: Astronaut1_RightFoot
+      position: {x: 0.08543144, y: 0.00000001567363, z: -0.000000025271898}
+      rotation: {x: 0.00002546143, y: -0.00000003864989, z: 0.00000009019278, w: 1}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000004}
+    - name: Astronaut1_Spine
+      parentName: Astronaut1_Hips
+      position: {x: -0.072613746, y: -0.00000005507717, z: 0.00000002696372}
+      rotation: {x: 0.000000029802322, y: 0.000000029802322, z: 0.009093776, w: -0.9999587}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Astronaut1_Spine1
+      parentName: Astronaut1_Spine
+      position: {x: -0.058139894, y: 0.00000006155183, z: -7.679801e-11}
+      rotation: {x: 0.00009356101, y: -0.0011055289, z: -0.08438796, w: -0.9964324}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Astronaut1_Spine2
+      parentName: Astronaut1_Spine1
+      position: {x: -0.07633506, y: 8.377852e-10, z: -0.000000015546577}
+      rotation: {x: 0.0006509893, y: 0.012439152, z: 0.0635317, w: -0.9979021}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Astronaut1_LeftShoulder
+      parentName: Astronaut1_Spine2
+      position: {x: -0.068027236, y: -0.018190758, z: 0.112578765}
+      rotation: {x: 0.43685263, y: -0.5501919, z: -0.60500854, w: -0.37471774}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+    - name: Astronaut1_LeftArm
+      parentName: Astronaut1_LeftShoulder
+      position: {x: -0.06309804, y: -0.000000068505635, z: 0.000000021692943}
+      rotation: {x: 0.698849, y: -0.091871776, z: -0.086035945, w: 0.7041075}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.9999998}
+    - name: Astronaut1_LeftForeArm
+      parentName: Astronaut1_LeftArm
+      position: {x: -0.09897099, y: -0.0000021829792, z: 0.0000031361758}
+      rotation: {x: -0.000000029802312, y: -0.00000106357, z: -0.031984095, w: 0.9994885}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+    - name: Astronaut1_LeftHand
+      parentName: Astronaut1_LeftForeArm
+      position: {x: -0.09311493, y: 0.000000021766205, z: 0.000000027587548}
+      rotation: {x: 0.0000000013106025, y: -0.000000040957143, z: -0.000000044703494, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Astronaut1_RightShoulder
+      parentName: Astronaut1_Spine2
+      position: {x: -0.07307638, y: -0.01819077, z: -0.10971254}
+      rotation: {x: -0.54154074, y: -0.45047864, z: 0.3871151, w: -0.59493244}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000001}
+    - name: Astronaut1_RightArm
+      parentName: Astronaut1_RightShoulder
+      position: {x: 0.06309806, y: 0.00000005639303, z: -0.000000045677197}
+      rotation: {x: -0.69884896, y: 0.09186454, z: 0.08602175, w: -0.70411026}
+      scale: {x: 1.0000005, y: 0.9999996, z: 0.9999997}
+    - name: Astronaut1_RightForeArm
+      parentName: Astronaut1_RightArm
+      position: {x: 0.09897097, y: 0.000000724115, z: -0.00000049658433}
+      rotation: {x: -0.000000089406946, y: 0.00000008381901, z: -0.03196893, w: 0.99948895}
+      scale: {x: 0.9999998, y: 1.0000005, z: 0.99999994}
+    - name: Astronaut1_RightHand
+      parentName: Astronaut1_RightForeArm
+      position: {x: 0.09311497, y: -0.000000033954667, z: -2.8789993e-10}
+      rotation: {x: 0.0000006869124, y: 0.55892843, z: 0.0009973263, w: 0.8292153}
+      scale: {x: 1.0000005, y: 1.0000002, z: 0.99999994}
+    - name: Gun
+      parentName: Astronaut1_RightHand
+      position: {x: 0.008025227, y: 0.0022801715, z: 0.028461708}
+      rotation: {x: 0.18961458, y: -0.08082695, z: 0.9757637, w: -0.073474936}
+      scale: {x: 0.096042536, y: 0.096042536, z: 0.03401846}
+    - name: Astronaut1_Neck
+      parentName: Astronaut1_Spine2
+      position: {x: -0.12004135, y: -0.00000004689626, z: -0.000000050850684}
+      rotation: {x: -0.00028121576, y: 0.004162265, z: -0.015158259, w: 0.9998765}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Astronaut1_Head
+      parentName: Astronaut1_Neck
+      position: {x: -0.17773384, y: -0.00000018500934, z: 0.000000017681323}
+      rotation: {x: -0, y: -0, z: -1.7791987e-10, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000005}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -120,13 +426,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 

@@ -6,6 +6,7 @@ public class CollectableItem : MonoBehaviour
 {
     [SerializeField] private Inventory inventory;
     public bool PickingUp;
+    private float Timer = 0.5f;
 
 
     private void OnTriggerEnter(Collider collider)
@@ -20,7 +21,21 @@ public class CollectableItem : MonoBehaviour
             inventory.items.Add(gameObject);
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             gameObject.GetComponent<BoxCollider>().enabled = false;
-          
+            
+        }
+    }
+
+    private void Update()
+    {
+        if (PickingUp == true)
+        {
+            Timer -= Time.deltaTime;
+
+            if (Timer <= 0)
+            {
+                PickingUp = false;
+                Timer = 0.5f;
+            }
         }
     }
 
