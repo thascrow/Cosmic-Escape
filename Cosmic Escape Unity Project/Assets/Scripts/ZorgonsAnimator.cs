@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZorgonsAnimator : MonoBehaviour
 {
-    [SerializeField] CharacterController controller;
+    
 
     [SerializeField] CollectableItem Coll1, Coll2, Coll3, Coll4;
     private Vector3 lastPosition = new Vector3(0, 0, 0);
