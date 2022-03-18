@@ -48,7 +48,30 @@ public class ThirdPersonController : MonoBehaviour
             gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
 
         }
-       
+        if (player3)
+        {
+
+            Vector3 move3 = new Vector3(Input.GetAxis("Horizontal3"), 0, Input.GetAxis("Vertical3"));
+            controller.Move(-move3 * Time.deltaTime * playerSpeed);
+            controller.Move(-playerVelocity * Time.deltaTime);
+            float mouseX = Input.GetAxis("XRotation3") * mouseSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("YRotation3") * mouseSensitivity * Time.deltaTime;
+
+            gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
+
+        }
+        if (player4)
+        {
+
+            Vector3 move4 = new Vector3(Input.GetAxis("Horizontal4"), 0, Input.GetAxis("Vertical4"));
+            controller.Move(-move4* Time.deltaTime * playerSpeed);
+            controller.Move(-playerVelocity * Time.deltaTime);
+            float mouseX = Input.GetAxis("XRotation4") * mouseSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("YRotation4") * mouseSensitivity * Time.deltaTime;
+
+            gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
+
+        }
 
         if (Input.GetButton("YRotation1"))
         {
