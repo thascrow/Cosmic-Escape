@@ -4873,6 +4873,7 @@ GameObject:
   - component: {fileID: 1385961718}
   - component: {fileID: 1385961717}
   - component: {fileID: 1385961716}
+  - component: {fileID: 1385961723}
   m_Layer: 0
   m_Name: Zorgons
   m_TagString: Player
@@ -4946,6 +4947,7 @@ MonoBehaviour:
   fireRate: 0.01
   damage: 5
   gameManager: {fileID: 810227726}
+  tp: {fileID: 1385961718}
 --- !u!136 &1385961720
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4995,6 +4997,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385961723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385961715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb676e08761b0a840a07074eccf5e763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfKills: 0
 --- !u!1 &1388801244
 GameObject:
   m_ObjectHideFlags: 0
@@ -5393,6 +5408,7 @@ MonoBehaviour:
   fireRate: 0.01
   damage: 5
   gameManager: {fileID: 810227726}
+  tp: {fileID: 1481220947}
 --- !u!136 &1481220949
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7170,6 +7186,7 @@ MonoBehaviour:
   fireRate: 0.01
   damage: 0.5
   gameManager: {fileID: 810227726}
+  tp: {fileID: 0}
 --- !u!136 &1850371258
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7357,6 +7374,7 @@ GameObject:
   - component: {fileID: 1955040409}
   - component: {fileID: 1955040408}
   - component: {fileID: 1955040407}
+  - component: {fileID: 1955040414}
   m_Layer: 0
   m_Name: Child2
   m_TagString: Player
@@ -7430,6 +7448,7 @@ MonoBehaviour:
   fireRate: 0.01
   damage: 5
   gameManager: {fileID: 810227726}
+  tp: {fileID: 1955040409}
 --- !u!136 &1955040411
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7479,6 +7498,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1955040414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955040406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb676e08761b0a840a07074eccf5e763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfKills: 0
 --- !u!1 &1961085768
 GameObject:
   m_ObjectHideFlags: 0
@@ -8768,6 +8800,7 @@ GameObject:
   - component: {fileID: 8173979309287654631}
   - component: {fileID: 8173979309287654633}
   - component: {fileID: 8173979309287654634}
+  - component: {fileID: 8173979309287654635}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Player
@@ -8794,6 +8827,7 @@ MonoBehaviour:
   fireRate: 0.01
   damage: 5
   gameManager: {fileID: 810227726}
+  tp: {fileID: 8173979309287654631}
 --- !u!143 &8173979309287654630
 CharacterController:
   m_ObjectHideFlags: 0
@@ -8873,6 +8907,19 @@ MonoBehaviour:
   health: 100
   gameManager: {fileID: 810227726}
   gameWinner: 0
+--- !u!114 &8173979309287654635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173979309287654628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb676e08761b0a840a07074eccf5e763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfKills: 0
 --- !u!1 &8637635289334885932
 GameObject:
   m_ObjectHideFlags: 0
