@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: 75428a68a371ccf4bb4af8a5a16d9190
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: PickUp
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Head' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: PickUp
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: ZorgonsChar_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ZorgonsChar_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: ZorgonsPickUp(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Zorgons
+      parentName: ZorgonsPickUp(Clone)
+      position: {x: -5.515193, y: -57.316063, z: -38.226788}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: ZorgonsChar_Reference
+      parentName: ZorgonsPickUp(Clone)
+      position: {x: -1.6765251, y: 0.088468224, z: 2.4594197}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: ZorgonsChar_Hips
+      parentName: ZorgonsChar_Reference
+      position: {x: 167.75244, y: 13.881504, z: -245.84676}
+      rotation: {x: 0.49883196, y: -0.50116533, z: -0.49883196, w: 0.50116533}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftUpLeg
+      parentName: ZorgonsChar_Hips
+      position: {x: 3.324598, y: 0.037706386, z: 4.1009283}
+      rotation: {x: -0.047722653, y: 0.05177893, z: -0.77830595, w: 0.62392414}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftLeg
+      parentName: ZorgonsChar_LeftUpLeg
+      position: {x: -7.698164, y: -0.0000035467062, z: -0.0000019981403}
+      rotation: {x: 0.101358056, y: -0.12250267, z: -0.25844014, w: 0.9528528}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftFoot
+      parentName: ZorgonsChar_LeftLeg
+      position: {x: -8.909743, y: 0.000002744566, z: -0.0000005251354}
+      rotation: {x: 0.08094267, y: -0.018089982, z: 0.45491657, w: 0.8866634}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftToeBase
+      parentName: ZorgonsChar_LeftFoot
+      position: {x: -7.85903, y: 0.0000000046357904, z: 0.00000015193318}
+      rotation: {x: 0.0015133133, y: 0.00083560956, z: 0.004218908, w: 0.9999896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightUpLeg
+      parentName: ZorgonsChar_Hips
+      position: {x: 3.3246017, y: 0.037708808, z: -4.1009135}
+      rotation: {x: -0.13282412, y: 0.14965248, z: 0.6852907, w: 0.7002418}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightLeg
+      parentName: ZorgonsChar_RightUpLeg
+      position: {x: 7.6981616, y: -0.000001394264, z: 0.000004647326}
+      rotation: {x: 0.0065267854, y: -0.087529644, z: -0.57231617, w: 0.81532216}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightFoot
+      parentName: ZorgonsChar_RightLeg
+      position: {x: 8.909742, y: -0.0000015359843, z: 0.0000011478339}
+      rotation: {x: -0.039535824, y: 0.052447174, z: 0.6704638, w: 0.73902947}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightToeBase
+      parentName: ZorgonsChar_RightFoot
+      position: {x: 7.859028, y: -0.00000018269797, z: -0.00000075082386}
+      rotation: {x: 0.00022468845, y: 0.000110221736, z: 0.0011113542, w: 0.99999934}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_Spine
+      parentName: ZorgonsChar_Hips
+      position: {x: -6.6340456, y: 0.000006539642, z: 0.0000032664557}
+      rotation: {x: 0.04633501, y: -0.13048533, z: -0.42946273, w: 0.892406}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_Spine1
+      parentName: ZorgonsChar_Spine
+      position: {x: -6.3468013, y: -0.0000034938694, z: -0.00000025691673}
+      rotation: {x: 0.009341073, y: 0.019507648, z: 0.044779066, w: 0.9987627}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_Spine2
+      parentName: ZorgonsChar_Spine1
+      position: {x: -6.484986, y: -0.0000035350704, z: -0.00000052072517}
+      rotation: {x: 0.0074989735, y: 0.020669317, z: -0.041879755, w: 0.99888074}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftShoulder
+      parentName: ZorgonsChar_Spine2
+      position: {x: -5.981913, y: -0.32608515, z: 6.830367}
+      rotation: {x: -0.7260277, y: 0.094075345, z: 0.18275103, w: 0.65622836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftArm
+      parentName: ZorgonsChar_LeftShoulder
+      position: {x: -9.785283, y: 0.0000026082337, z: -0.0000005842338}
+      rotation: {x: 0.3144666, y: -0.12955077, z: 0.35409835, w: 0.87117267}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftForeArm
+      parentName: ZorgonsChar_LeftArm
+      position: {x: -14.590973, y: 0.0000017445819, z: -0.0000130237}
+      rotation: {x: -0.2025031, y: 0.43749163, z: -0.19209708, w: 0.8548054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_LeftHand
+      parentName: ZorgonsChar_LeftForeArm
+      position: {x: -13.22482, y: -0.000005380878, z: -0.0000033706126}
+      rotation: {x: -0.036556542, y: -0.22537315, z: -0.09531883, w: 0.96890914}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_Neck
+      parentName: ZorgonsChar_Spine2
+      position: {x: -21.858252, y: -0.000009661097, z: 0.000006813513}
+      rotation: {x: -0.013537758, y: -0.01007828, z: -0.29624635, w: 0.95496243}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_Head
+      parentName: ZorgonsChar_Neck
+      position: {x: -21.53788, y: 0.000009984664, z: 0.000010701258}
+      rotation: {x: -0.059977133, y: -0.13805728, z: 0.06816559, w: 0.98625374}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightShoulder
+      parentName: ZorgonsChar_Spine2
+      position: {x: -5.9819107, y: -0.32608566, z: -6.830354}
+      rotation: {x: 0.13572673, y: 0.73040926, z: -0.6414432, w: 0.19139288}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightArm
+      parentName: ZorgonsChar_RightShoulder
+      position: {x: 9.78527, y: -0.0000074285176, z: -0.0000007998542}
+      rotation: {x: 0.28185207, y: -0.14830756, z: 0.103235856, w: 0.94228804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightForeArm
+      parentName: ZorgonsChar_RightArm
+      position: {x: 14.590984, y: 0.000010525952, z: -0.000010232756}
+      rotation: {x: -0.06484525, y: 0.089295976, z: -0.04849786, w: 0.9927081}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ZorgonsChar_RightHand
+      parentName: ZorgonsChar_RightForeArm
+      position: {x: 13.224804, y: -0.000014424687, z: -0.0000009689057}
+      rotation: {x: -0.03357852, y: -0.13516188, z: 0.01984712, w: 0.9900555}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
