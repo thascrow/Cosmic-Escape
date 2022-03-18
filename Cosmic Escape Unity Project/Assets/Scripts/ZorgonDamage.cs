@@ -13,7 +13,7 @@ public class ZorgonDamage : MonoBehaviour
         {
             if(collider.tag == "Enemy")
             {
-                damagableCharacter.DeductHealth(10);
+                damagableCharacter.DeductHealth(10, collider.gameObject);
             }
         }
     }
@@ -26,7 +26,7 @@ public class ZorgonDamage : MonoBehaviour
             {
                 timeAttackingFor += Time.deltaTime;
 
-                damagableCharacter.DeductHealth((int)timeAttackingFor);
+                damagableCharacter.DeductHealth(timeAttackingFor, collider.gameObject);
             }
         }
     }
