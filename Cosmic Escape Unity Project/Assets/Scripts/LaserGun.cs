@@ -39,7 +39,7 @@ public class LaserGun : MonoBehaviour
         {
             if (hit.transform.tag == "Enemy")
             {
-                hit.transform.GetComponent<DamagableCharacter>().DeductHealth(damage);
+                hit.transform.GetComponent<DamagableCharacter>().DeductHealth(damage, gameObject);
                 gameManager.points += damage;
             }
         }
@@ -53,7 +53,6 @@ public class LaserGun : MonoBehaviour
 
         if (Input.GetButton("Fire1") && tp.player1 )
         {
-            print("Hello");
             if (autoFireTimer > fireRate)
             {
                 this.FireShot();

@@ -536,6 +536,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b12c2d99bfaa59843ac8200f625268d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: {fileID: 0}
+  optionMenu: {fileID: 0}
+  creditsMenu: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  mainMenuVolume: {fileID: 0}
+  resolutionDropdown: {fileID: 0}
 --- !u!4 &950059562
 Transform:
   m_ObjectHideFlags: 0

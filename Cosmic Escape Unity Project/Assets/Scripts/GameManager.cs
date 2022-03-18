@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] public Transform playerTransform;
+    [SerializeField] public List<Transform> playerTransforms;
     [SerializeField] private GameObject gameOverUI;
     [HideInInspector] public float points;
     private int currentPlayerTurn;
@@ -14,14 +15,19 @@ public class GameManager : MonoBehaviour
     private bool playerSwitchTurnFirstTimeRun;
     private int rotationAmount;
     private int player1RotationY, player2RotationY, player3RotationY, player4RotationY;
-
+    [SerializeField] public int playersLeftInMiniGame;
+    [SerializeField] public int enemiesLeftInMiniGame;
+    
 
     [HideInInspector] public int player1HousePoints, player2HousePoints, player3HousePoints, player4HousePoints;
     [HideInInspector] public Vector3 player1BoardPos, player2BoardPos, player3BoardPos, player4BoardPos;
 
     private void Start()
     {
-        SwitchPlayerTurn(1);
+        if(SceneManager.GetActiveScene().name != "Zorgon Mini Game")
+        {
+            SwitchPlayerTurn(1);
+        }   
         DontDestroyOnLoad(gameObject);
         playerSwitchTurnFirstTimeRun = true;
     }

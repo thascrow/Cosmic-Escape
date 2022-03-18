@@ -7023,6 +7023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652010632297}
+  - component: {fileID: 919132147489181396}
   m_Layer: 0
   m_Name: BoardAllTogheter
   m_TagString: Untagged
@@ -7030,6 +7031,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132147489181396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147489181395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e952a127cbfd444bda63162434efb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wayPointPositions: []
 --- !u!4 &952424495722193585
 Transform:
   m_ObjectHideFlags: 0

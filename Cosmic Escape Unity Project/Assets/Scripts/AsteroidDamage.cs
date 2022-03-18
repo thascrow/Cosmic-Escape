@@ -12,7 +12,7 @@ public class AsteroidDamage : MonoBehaviour
         {
             if (collision.gameObject.tag == "Enemy")
             {
-                damagableCharacter.DeductHealth(50);
+                damagableCharacter.DeductHealth(50, gameObject);
             }
         }
     }
