@@ -33,7 +33,7 @@ public class DamagableCharacter : MonoBehaviour
                 FinishGame();
             }
 
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
@@ -60,7 +60,7 @@ public class DamagableCharacter : MonoBehaviour
             if(killCounts[i] >= highestKill)
             {
                 highestKill = killCounts[i];
-                gameWinner = i;
+                gameWinner = i + 1;
                 print("Winner: " + gameWinner);
             }
         }
