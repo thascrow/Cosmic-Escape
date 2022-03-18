@@ -2737,7 +2737,7 @@ Transform:
   - {fileID: 615682114}
   - {fileID: 1325851980}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105319970
 GameObject:
@@ -3636,7 +3636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1325851982}
-  damagableCharacter: {fileID: 0}
+  damagableCharacter: {fileID: 1094194625}
 --- !u!114 &1325851982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3826,10 +3826,10 @@ MonoBehaviour:
   controller: {fileID: 1385961721}
   playerSpeed: 4
   mouseSensitivity: 1000
-  player1: 1
+  player1: 0
   player2: 0
   player3: 0
-  player4: 0
+  player4: 1
 --- !u!114 &1385961719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3889,7 +3889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385961715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.245, y: 0.123, z: 0}
+  m_LocalPosition: {x: 0.81, y: 0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1651445848}
@@ -4346,8 +4346,8 @@ MonoBehaviour:
   controller: {fileID: 1481220950}
   playerSpeed: 4
   mouseSensitivity: 1000
-  player1: 1
-  player2: 0
+  player1: 0
+  player2: 1
   player3: 0
   player4: 0
 --- !u!114 &1481220948
@@ -4526,7 +4526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4826,7 +4826,7 @@ Transform:
   - {fileID: 1436172987}
   - {fileID: 1485320350}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1606978939
 GameObject:
@@ -5774,7 +5774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850371253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7, y: 0.123, z: 0}
+  m_LocalPosition: {x: 4.23, y: 0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 237901124}
@@ -5970,9 +5970,9 @@ MonoBehaviour:
   controller: {fileID: 1955040412}
   playerSpeed: 4
   mouseSensitivity: 1000
-  player1: 1
+  player1: 0
   player2: 0
-  player3: 0
+  player3: 1
   player4: 0
 --- !u!114 &1955040410
 MonoBehaviour:
@@ -6033,7 +6033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955040406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.988, y: 0.123, z: 0}
+  m_LocalPosition: {x: 7.32, y: 0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 594074136}
@@ -7360,14 +7360,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8173979309287654628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: 0.123, z: 0}
+  m_LocalPosition: {x: -5.65, y: 0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1628584788}
   - {fileID: 9014073910408918999}
   - {fileID: 56207294}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &9014073910408918999
 RectTransform:
