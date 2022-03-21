@@ -20,8 +20,6 @@ public class ThirdPersonController : MonoBehaviour
 
     void Update()
     {
-
-
         // move player based on inputs
         if (player1)
         {
@@ -32,45 +30,40 @@ public class ThirdPersonController : MonoBehaviour
             float mouseY = Input.GetAxis("YRotation1") * mouseSensitivity * Time.deltaTime;
             gameObject.transform.Rotate(Vector3.up * mouseX);
             gameObject.transform.Rotate(Vector3.up * mouseY);
-
-
         }
         
         if (player2)
         {
-            
             Vector3 move2 = new Vector3(Input.GetAxis("Horizontal2"), 0, Input.GetAxis("Vertical2"));
             controller.Move(move2 * Time.deltaTime * playerSpeed);
             controller.Move(playerVelocity * Time.deltaTime);
             float mouseX = Input.GetAxis("XRotation2") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("YRotation2") * mouseSensitivity * Time.deltaTime;
-           
-            gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
 
+            gameObject.transform.Rotate(Vector3.up * mouseX);
+            gameObject.transform.Rotate(Vector3.up * mouseY);
         }
         if (player3)
         {
-
             Vector3 move3 = new Vector3(Input.GetAxis("Horizontal3"), 0, Input.GetAxis("Vertical3"));
             controller.Move(move3 * Time.deltaTime * playerSpeed);
             controller.Move(playerVelocity * Time.deltaTime);
             float mouseX = Input.GetAxis("XRotation3") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("YRotation3") * mouseSensitivity * Time.deltaTime;
 
-            gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
-
+            gameObject.transform.Rotate(Vector3.up * mouseX);
+            gameObject.transform.Rotate(Vector3.up * mouseY);
         }
         if (player4)
         {
-
             Vector3 move4 = new Vector3(Input.GetAxis("Horizontal4"), 0, Input.GetAxis("Vertical4"));
             controller.Move(move4* Time.deltaTime * playerSpeed);
             controller.Move(playerVelocity * Time.deltaTime);
             float mouseX = Input.GetAxis("XRotation4") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("YRotation4") * mouseSensitivity * Time.deltaTime;
 
-            gameObject.transform.Rotate(0, Mathf.Clamp(mouseX, 0, 180), 0);
-
+            gameObject.transform.Rotate(Vector3.up * mouseX);
+            gameObject.transform.Rotate(Vector3.up * mouseY);
         }
 
         if (Input.GetButton("YRotation1"))
@@ -79,9 +72,6 @@ public class ThirdPersonController : MonoBehaviour
             print("Hello");
             print("Hello");
         }
-
-
-
 
         // rotate player based on inputs
         

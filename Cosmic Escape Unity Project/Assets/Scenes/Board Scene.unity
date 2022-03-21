@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44984788, g: 0.49713105, b: 0.56066537, a: 1}
+  m_IndirectSpecularColor: {r: 0.44786173, g: 0.4978556, b: 0.57545525, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2727,6 +2727,79 @@ Transform:
   m_Father: {fileID: 1148847534}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &830879778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1168392375329754040, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_Name
+      value: AnimatorManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.000012814998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.000010943412
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: Child1
+      value: 
+      objectReference: {fileID: 709046890}
+    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: Child2
+      value: 
+      objectReference: {fileID: 230404944}
+    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: Zorgons
+      value: 
+      objectReference: {fileID: 1443257071}
+    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+      propertyPath: Astronaut
+      value: 
+      objectReference: {fileID: 487774367}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
 --- !u!1 &884292097
 GameObject:
   m_ObjectHideFlags: 0
@@ -6152,12 +6225,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80d9f023baed094db472c53ed7322db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
+  playerTransforms: []
   gameOverUI: {fileID: 0}
   points: 0
   board: {fileID: 543450652010632297}
   cam: {fileID: 1030088193}
   boardGameUIManager: {fileID: 1411240519}
+  playersLeftInMiniGame: 0
+  enemiesLeftInMiniGame: 0
   player1HousePoints: 0
   player2HousePoints: 0
   player3HousePoints: 0
@@ -7137,6 +7212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wayPointPositions: []
+  gameManager: {fileID: 0}
 --- !u!4 &952424495722193585
 Transform:
   m_ObjectHideFlags: 0
