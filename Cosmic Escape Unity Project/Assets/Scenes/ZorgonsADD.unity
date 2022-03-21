@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311292, g: 0.38073754, b: 0.358736, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514159, g: 0.50058544, b: 0.5705818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2189,12 +2189,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80d9f023baed094db472c53ed7322db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 8801193052431162974}
+  playerTransforms: []
   gameOverUI: {fileID: 1105319970}
   points: 0
   board: {fileID: 0}
   cam: {fileID: 0}
   boardGameUIManager: {fileID: 0}
+  playersLeftInMiniGame: 0
+  enemiesLeftInMiniGame: 0
   player1HousePoints: 0
   player2HousePoints: 0
   player3HousePoints: 0
@@ -2591,6 +2593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 810227726}
+  targetPlayer: 0
 --- !u!195 &1094194624
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2627,6 +2630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1000
   gameManager: {fileID: 810227726}
+  gameWinner: 0
 --- !u!4 &1094194626
 Transform:
   m_ObjectHideFlags: 0
@@ -3702,6 +3706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 99999
   gameManager: {fileID: 810227726}
+  gameWinner: 0
 --- !u!114 &1385961717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4222,6 +4227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 99999
   gameManager: {fileID: 810227726}
+  gameWinner: 0
 --- !u!114 &1481220946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5446,13 +5452,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764530440}
-  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalRotation: {x: 0.22158848, y: 0.3715133, z: -0.09178495, w: 0.8969125}
   m_LocalPosition: {x: -135, y: 10, z: -135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 27.755, y: 45, z: 0}
 --- !u!1001 &1785704854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5683,6 +5689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 99999
   gameManager: {fileID: 810227726}
+  gameWinner: 0
 --- !u!114 &1850371255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5942,6 +5949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 99999
   gameManager: {fileID: 810227726}
+  gameWinner: 0
 --- !u!114 &1955040408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7334,6 +7342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 99999
   gameManager: {fileID: 810227726}
+  gameWinner: 0
 --- !u!1 &8637635289334885932
 GameObject:
   m_ObjectHideFlags: 0
