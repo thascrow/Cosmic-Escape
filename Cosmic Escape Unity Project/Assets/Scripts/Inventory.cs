@@ -19,6 +19,10 @@ public class Inventory : MonoBehaviour
         points += addPoint;
     }
 
+    public int GetPoints()
+    {
+        return points;
+    }
     private void Update()
     {
         if (points >= 4)
