@@ -13,6 +13,7 @@ public class SpawnAsteroid : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private bool spawnAtPlayerPos;
     [SerializeField] private float spawnPointDistanceFromCamera;
+    private int activePlayerCheckLoopIterations;
 
     private void Start()
     {
@@ -75,11 +76,20 @@ public class SpawnAsteroid : MonoBehaviour
         {
             int newRandomPlayerTransform = RandomPlayer();
             GameObject newSelectedPlayer = gameManager.playerTransforms[newRandomPlayerTransform].gameObject;
+            
 
             if (newSelectedPlayer.activeSelf == true)
             {
                 selectedPlayer = newSelectedPlayer;
                 break;
+            }
+            else if(activePlayerCheckLoopIterations >= 4)
+            {
+                break;
+            }
+            else
+            {
+                activePlayerCheckLoopIterations++;
             }
         }
 
