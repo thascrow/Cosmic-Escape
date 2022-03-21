@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DamagableCharacter : MonoBehaviour
 {
@@ -14,26 +15,33 @@ public class DamagableCharacter : MonoBehaviour
     {
         if (health <= 0)
         {
-            if (gameObject.tag == "Enemy")
+            if (SceneManager.GetActiveScene().name == "Zorgon Mini Game")
             {
-                playerAttacking.GetComponent<KillCount>().amountOfKills++;
-                gameManager.enemiesLeftInMiniGame--;
-            }
-            else if (gameObject.tag == "Player")
-            {
-                gameManager.playersLeftInMiniGame--;
-            }
+                if (gameObject.tag == "Enemy")
+                {
+                    playerAttacking.GetComponent<KillCount>().amountOfKills++;
+                    gameManager.enemiesLeftInMiniGame--;
+                }
+                else if (gameObject.tag == "Player")
+                {
+                    gameManager.playersLeftInMiniGame--;
+                }
 
-            if (gameManager.playersLeftInMiniGame == 0)
-            {
-                FinishGame();
-            }
-            else if (gameManager.enemiesLeftInMiniGame == 0)
-            {
-                FinishGame();
-            }
+                if (gameManager.playersLeftInMiniGame == 0)
+                {
+                    FinishGame();
+                }
+                else if (gameManager.enemiesLeftInMiniGame == 0)
+                {
+                    FinishGame();
+                }
 
-            gameObject.SetActive(false);
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 

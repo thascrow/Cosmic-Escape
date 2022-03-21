@@ -67,14 +67,33 @@ public class SpawnAsteroid : MonoBehaviour
 
     Vector3 SpawnAtPlayerPos()
     {
-        int randomPlayerTransform = Random.Range(0, gameManager.playerTransforms.Count);
+        int randomPlayerTransform = RandomPlayer();
 
-        float playerX = gameManager.playerTransforms[randomPlayerTransform].transform.position.x;
+        GameObject selectedPlayer = gameManager.playerTransforms[randomPlayerTransform].gameObject;
+
+        while (selectedPlayer.activeSelf == false)
+        {
+            int newRandomPlayerTransform = RandomPlayer();
+            GameObject newSelectedPlayer = gameManager.playerTransforms[newRandomPlayerTransform].gameObject;
+
+            if (newSelectedPlayer.activeSelf == true)
+            {
+                selectedPlayer = newSelectedPlayer;
+                break;
+            }
+        }
+
+        float playerX = selectedPlayer.transform.position.x;
         float playerZ = gameManager.playerTransforms[randomPlayerTransform].transform.position.y;
 
         Vector3 asteroidAtPlayerPos = new Vector3(playerX, transform.position.y, playerZ);
         newPos = asteroidAtPlayerPos;
 
         return newPos;
+    }
+
+    private int RandomPlayer()
+    {
+        return Random.Range(0, gameManager.playerTransforms.Count);
     }
 }
