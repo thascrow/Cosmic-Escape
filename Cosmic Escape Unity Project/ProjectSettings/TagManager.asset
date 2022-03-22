@@ -7,6 +7,10 @@ TagManager:
   - Bullet
   - Enemy
   - Collectable
+  - Player 1 Board Point
+  - Player 2 Board Point
+  - Player 3 Board Point
+  - Player 4 Board Point
   layers:
   - Default
   - TransparentFX
