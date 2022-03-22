@@ -8,11 +8,11 @@ public class Dice : MonoBehaviour
     private List<GameObject> diceFaces;
     private float timeSinceFaceChange;
     private int lastDiceFace;
-    private float rollFor;
+    private bool hasRolled;
 
     private void Start()
     {
-        rollFor = Random.Range(2, 5);
+        hasRolled = false;
 
         diceFaces = new List<GameObject>();
 
@@ -29,18 +29,17 @@ public class Dice : MonoBehaviour
 
     private void Roll()
     {
-        rollFor -= Time.deltaTime;
-
-        if(Input.GetButton(KeyCode.121))
+        if (hasRolled == false)
         {
-            LoopThroughDiceFaces();
-
-            if(Input.GetKeyUp(KeyCode.Y))
+            if (Input.GetButton("Xbox Y"))
+            {
+                LoopThroughDiceFaces();
+            }
+            if(hasRolled == true)
             {
                 SelectRandomDiceFace();
             }
         }
-
     }
 
     private void SelectRandomDiceFace()

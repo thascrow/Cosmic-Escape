@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         {
             if (!gameBegun)
             {
-                if (Input.GetKeyDown(KeyCode.A))
+                if (Input.GetButtonDown("Xbox A"))
                 {
                     SwitchPlayerTurn(1);
                     gameBegun = true;
