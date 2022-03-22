@@ -8,15 +8,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] public List<Transform> playerTransforms;
     [SerializeField] private GameObject gameOverUI;
     [HideInInspector] public float points;
-    private int currentPlayerTurn;
+    [HideInInspector] public int currentPlayerTurn;
     [SerializeField] private Transform board;
     [SerializeField] private Transform cam;
-    [SerializeField] private BoardGameUIManager boardGameUIManager;
+    [SerializeField] private BoardUIManager boardUIManager;
     private bool playerSwitchTurnFirstTimeRun;
     private int rotationAmount;
     private int player1RotationY, player2RotationY, player3RotationY, player4RotationY;
     [SerializeField] public int playersLeftInMiniGame;
     [SerializeField] public int enemiesLeftInMiniGame;
+    [SerializeField] private GameObject diceRollScreen;
+    [SerializeField] private GameObject dice;
+    private bool gameBegun;
     
 
     [HideInInspector] public int player1HousePoints, player2HousePoints, player3HousePoints, player4HousePoints;
@@ -24,12 +27,27 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if(SceneManager.GetActiveScene().name != "Zorgon Mini Game")
-        {
-            SwitchPlayerTurn(1);
-        }   
         DontDestroyOnLoad(gameObject);
         playerSwitchTurnFirstTimeRun = true;
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name != "Zorgon Mini Game")
+        {
+            if (!gameBegun)
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    SwitchPlayerTurn(1);
+                    gameBegun = true;
+                }
+            }
+            /*if (Input.GetKeyDown(KeyCode.Y) && diceRollScreen.activeSelf == true)
+            {
+               Instantiate(dice, diceRollScreen.transform);
+            }*/
+        }
     }
 
     void SwitchPlayerTurn(int playerSwitchingTo)
@@ -58,24 +76,31 @@ public class GameManager : MonoBehaviour
             case 1:
                 //board.Rotate(new Vector3(0, board.rotation.y + player1RotationY, 0));
                 //MatchCamRotationToBoard();
-                boardGameUIManager.UpdateSelectedCurrentPlayer(1);
+                boardUIManager.UpdateSelectedCurrentPlayer(1);
+                ShowDice(playerSwitchingTo);
                 break;
             case 2:
                 //board.Rotate(new Vector3(0, board.rotation.y + player2RotationY, 0));
                 //MatchCamRotationToBoard();
-                boardGameUIManager.UpdateSelectedCurrentPlayer(2);
+                boardUIManager.UpdateSelectedCurrentPlayer(2);
                 break;
             case 3:
                 //board.Rotate(new Vector3(0, board.rotation.y + player3RotationY, 0));
                 //MatchCamRotationToBoard();
-                boardGameUIManager.UpdateSelectedCurrentPlayer(3);
+                boardUIManager.UpdateSelectedCurrentPlayer(3);
                 break;
             case 4:
                 //board.Rotate(new Vector3(0, board.rotation.y + player3RotationY, 0));
                 //MatchCamRotationToBoard();
-                boardGameUIManager.UpdateSelectedCurrentPlayer(4);
+                boardUIManager.UpdateSelectedCurrentPlayer(4);
                 break;
         }
+    }
+
+    private void ShowDice(int playerSwitchingTo)
+    {
+        diceRollScreen.SetActive(true);
+        Instantiate(dice, diceRollScreen.transform);
     }
 
     private void MatchCamRotationToBoard()

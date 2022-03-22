@@ -11,6 +11,7 @@ TagManager:
   - Player 2 Board Point
   - Player 3 Board Point
   - Player 4 Board Point
+  - Dice Face
   layers:
   - Default
   - TransparentFX
