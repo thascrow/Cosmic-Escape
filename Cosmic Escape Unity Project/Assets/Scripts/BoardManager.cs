@@ -5,7 +5,6 @@ using UnityEngine;
 public class BoardManager : MonoBehaviour
 {
     [SerializeField] private List<Transform> player1WayPoints, player2WayPoints, player3WayPoints, player4WayPoints;
-    [SerializeField] private GameManager gameManager;
     [SerializeField] private BoardAgent boardAgent1, boardAgent2, boardAgent3, boardAgent4;
 
     private void Start()
@@ -15,10 +14,10 @@ public class BoardManager : MonoBehaviour
         PopulateBoardPointPositions(3);
         PopulateBoardPointPositions(4);
 
-        boardAgent1.GoToWaypoint(player1WayPoints[1]);
-        //boardAgent2.GoToWaypoint(player2WayPoints[2]);
-        //boardAgent3.GoToWaypoint(player3WayPoints[3]);
-        //boardAgent4.GoToWaypoint(player4WayPoints[4]);
+        boardAgent1.GoToWayPoint(player1WayPoints[0]);
+        boardAgent2.GoToWayPoint(player2WayPoints[1]);
+        boardAgent3.GoToWayPoint(player3WayPoints[2]);
+        boardAgent4.GoToWayPoint(player4WayPoints[3]);
     }
 
     private void PopulateBoardPointPositions(int playerNum)

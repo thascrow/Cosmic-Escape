@@ -5,13 +5,8 @@ using UnityEngine.AI;
 
 public class BoardAgent : MonoBehaviour
 {
-    private NavMeshAgent agent;
+    [SerializeField] private NavMeshAgent agent;
     [SerializeField] private int playerNum;
-
-    private void Start()
-    {
-        agent = GetComponent<NavMeshAgent>();
-    }
 
     private void Update()
     {
@@ -21,7 +16,7 @@ public class BoardAgent : MonoBehaviour
         }
     }
 
-    public void GoToWaypoint(Transform wayPointPos)
+    public void GoToWayPoint(Transform wayPointPos)
     {
         switch (playerNum)
         {
