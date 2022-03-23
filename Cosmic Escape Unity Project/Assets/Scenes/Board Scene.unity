@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 0.2
+    agentHeight: 1
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.06666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 9740703}
   m_Layer: 0
   m_Name: Board Point 20
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,7 +229,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -248,8 +248,9 @@ RectTransform:
   - {fileID: 1574782223}
   - {fileID: 278384591}
   - {fileID: 1678816661}
+  - {fileID: 870935659}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -267,7 +268,7 @@ GameObject:
   - component: {fileID: 26798165}
   m_Layer: 0
   m_Name: Board Point 9
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,7 +298,7 @@ GameObject:
   - component: {fileID: 55361780}
   m_Layer: 0
   m_Name: Board Point 4
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,7 +328,7 @@ GameObject:
   - component: {fileID: 72973233}
   m_Layer: 0
   m_Name: Board Point 18
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -357,7 +358,7 @@ GameObject:
   - component: {fileID: 74071907}
   m_Layer: 0
   m_Name: Board Point 10
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,7 +388,7 @@ GameObject:
   - component: {fileID: 82255225}
   m_Layer: 0
   m_Name: Board Point 17
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -417,7 +418,7 @@ GameObject:
   - component: {fileID: 86639913}
   m_Layer: 0
   m_Name: Board Point 6
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -447,7 +448,7 @@ GameObject:
   - component: {fileID: 112604946}
   m_Layer: 0
   m_Name: Board Point 22
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -557,7 +558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -226.2, y: -30, z: 0}
 --- !u!1 &131227240
 GameObject:
@@ -570,7 +571,7 @@ GameObject:
   - component: {fileID: 131227241}
   m_Layer: 0
   m_Name: Board Point 15
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -600,7 +601,7 @@ GameObject:
   - component: {fileID: 132141652}
   m_Layer: 0
   m_Name: Board Point 24
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -654,7 +655,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 39.26244, y: 4.7755127}
-  m_SizeDelta: {x: 58.215, y: 64.165}
+  m_SizeDelta: {x: 58.215, y: 58.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132483038
 MonoBehaviour:
@@ -705,7 +706,7 @@ GameObject:
   - component: {fileID: 135963058}
   m_Layer: 0
   m_Name: Board Point 26
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -735,7 +736,7 @@ GameObject:
   - component: {fileID: 162941185}
   m_Layer: 0
   m_Name: Board Point 13
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -765,7 +766,7 @@ GameObject:
   - component: {fileID: 179497816}
   m_Layer: 0
   m_Name: Board Point 10
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -795,7 +796,7 @@ GameObject:
   - component: {fileID: 194066687}
   m_Layer: 0
   m_Name: Board Point 16
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -825,7 +826,7 @@ GameObject:
   - component: {fileID: 199096872}
   m_Layer: 0
   m_Name: Board Point 24
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -855,7 +856,7 @@ GameObject:
   - component: {fileID: 203596560}
   m_Layer: 0
   m_Name: Board Point 28
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -984,7 +985,7 @@ GameObject:
   - component: {fileID: 268659149}
   m_Layer: 0
   m_Name: Board Point 13
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1207,7 +1208,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 34.5, y: 4.7755127}
-  m_SizeDelta: {x: 62.8139, y: 64.4724}
+  m_SizeDelta: {x: 58.215, y: 58.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284097427
 MonoBehaviour:
@@ -1258,7 +1259,7 @@ GameObject:
   - component: {fileID: 295911195}
   m_Layer: 0
   m_Name: Board Point 25
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1288,7 +1289,7 @@ GameObject:
   - component: {fileID: 303975959}
   m_Layer: 0
   m_Name: Board Point 6
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1318,7 +1319,7 @@ GameObject:
   - component: {fileID: 307236416}
   m_Layer: 0
   m_Name: Board Point 26
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1348,7 +1349,7 @@ GameObject:
   - component: {fileID: 314135484}
   m_Layer: 0
   m_Name: Board Point 9
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1367,6 +1368,140 @@ Transform:
   m_Father: {fileID: 1196567343}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &323582402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323582403}
+  - component: {fileID: 323582405}
+  - component: {fileID: 323582404}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &323582403
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323582402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2115536432}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 285}
+  m_SizeDelta: {x: 1033.5961, y: 145.9895}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &323582404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323582402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Player 1's turn to roll
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
+  m_sharedMaterial: {fileID: -6063730933788823365, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 99.6
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 1000
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &323582405
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323582402}
+  m_CullTransparentMesh: 1
 --- !u!1 &324756864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,7 +1513,7 @@ GameObject:
   - component: {fileID: 324756865}
   m_Layer: 0
   m_Name: Board Point 27
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1408,7 +1543,7 @@ GameObject:
   - component: {fileID: 326553267}
   m_Layer: 0
   m_Name: Board Point 6
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1438,7 +1573,7 @@ GameObject:
   - component: {fileID: 340989703}
   m_Layer: 0
   m_Name: Board Point 24
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1618,7 +1753,7 @@ GameObject:
   - component: {fileID: 364120745}
   m_Layer: 0
   m_Name: Board Point 1
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1648,7 +1783,7 @@ GameObject:
   - component: {fileID: 380282957}
   m_Layer: 0
   m_Name: Board Point 11
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1744,7 +1879,7 @@ GameObject:
   - component: {fileID: 384501462}
   m_Layer: 0
   m_Name: Board Point 16
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1774,7 +1909,7 @@ GameObject:
   - component: {fileID: 413711712}
   m_Layer: 0
   m_Name: Board Point 20
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1804,7 +1939,7 @@ GameObject:
   - component: {fileID: 415903327}
   m_Layer: 0
   m_Name: Board Point 17
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1834,7 +1969,7 @@ GameObject:
   - component: {fileID: 450037782}
   m_Layer: 0
   m_Name: Board Point 8
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1864,7 +1999,7 @@ GameObject:
   - component: {fileID: 459146251}
   m_Layer: 0
   m_Name: Board Point 19
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1894,7 +2029,7 @@ GameObject:
   - component: {fileID: 464844131}
   m_Layer: 0
   m_Name: Board Point 11
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1948,7 +2083,7 @@ GameObject:
   - component: {fileID: 510702932}
   m_Layer: 0
   m_Name: Board Point 17
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2001,7 +2136,7 @@ Transform:
   - {fileID: 591512987}
   - {fileID: 1972628840}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547293015
 GameObject:
@@ -2014,7 +2149,7 @@ GameObject:
   - component: {fileID: 547293016}
   m_Layer: 0
   m_Name: Board Point 21
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2044,7 +2179,7 @@ GameObject:
   - component: {fileID: 551171780}
   m_Layer: 0
   m_Name: Board Point 7
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2074,7 +2209,7 @@ GameObject:
   - component: {fileID: 554444180}
   m_Layer: 0
   m_Name: Board Point 16
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2104,7 +2239,7 @@ GameObject:
   - component: {fileID: 575927096}
   m_Layer: 0
   m_Name: Board Point 15
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2134,7 +2269,7 @@ GameObject:
   - component: {fileID: 582200084}
   m_Layer: 0
   m_Name: Board Point 12
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2164,7 +2299,7 @@ GameObject:
   - component: {fileID: 586828687}
   m_Layer: 0
   m_Name: Board Point 21
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2194,7 +2329,7 @@ GameObject:
   - component: {fileID: 589244533}
   m_Layer: 0
   m_Name: Board Point 20
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2305,7 +2440,7 @@ GameObject:
   - component: {fileID: 611544653}
   m_Layer: 0
   m_Name: Board Point 27
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2335,7 +2470,7 @@ GameObject:
   - component: {fileID: 622262603}
   m_Layer: 0
   m_Name: Board Point 24
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2365,7 +2500,7 @@ GameObject:
   - component: {fileID: 633766483}
   m_Layer: 0
   m_Name: Board Point 3
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2395,7 +2530,7 @@ GameObject:
   - component: {fileID: 695038305}
   m_Layer: 0
   m_Name: Board Point 28
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2449,7 +2584,7 @@ GameObject:
   - component: {fileID: 719008938}
   m_Layer: 0
   m_Name: Board Point 14
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2479,7 +2614,7 @@ GameObject:
   - component: {fileID: 730830356}
   m_Layer: 0
   m_Name: Board Point 13
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2509,7 +2644,7 @@ GameObject:
   - component: {fileID: 768354409}
   m_Layer: 0
   m_Name: Board Point 26
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2618,7 +2753,7 @@ GameObject:
   - component: {fileID: 784889880}
   m_Layer: 0
   m_Name: Board Point 11
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2648,7 +2783,7 @@ GameObject:
   - component: {fileID: 787742557}
   m_Layer: 0
   m_Name: Board Point 18
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2678,7 +2813,7 @@ GameObject:
   - component: {fileID: 797020294}
   m_Layer: 0
   m_Name: Board Point 12
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2708,7 +2843,7 @@ GameObject:
   - component: {fileID: 806064090}
   m_Layer: 0
   m_Name: Board Point 5
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2727,79 +2862,140 @@ Transform:
   m_Father: {fileID: 1148847534}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &830879778
-PrefabInstance:
+--- !u!1 &870935658
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1168392375329754040, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_Name
-      value: AnimatorManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.000012814998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.4999976
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000010943412
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754054, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: Child1
-      value: 
-      objectReference: {fileID: 709046890}
-    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: Child2
-      value: 
-      objectReference: {fileID: 230404944}
-    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: Zorgons
-      value: 
-      objectReference: {fileID: 1443257071}
-    - target: {fileID: 1168392375329754055, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
-      propertyPath: Astronaut
-      value: 
-      objectReference: {fileID: 487774367}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4b3daf8a216aac942babba621ea7daf0, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870935659}
+  - component: {fileID: 870935661}
+  - component: {fileID: 870935660}
+  m_Layer: 5
+  m_Name: Game Begin Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &870935659
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870935658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 12652330}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0000076294, y: -0.00002861}
+  m_SizeDelta: {x: 1123.4623, y: 244.0263}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &870935660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870935658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Press (A) to begin!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
+  m_sharedMaterial: {fileID: -6063730933788823365, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 139.55
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 1000
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &870935661
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870935658}
+  m_CullTransparentMesh: 1
 --- !u!1 &884292097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,7 +3007,7 @@ GameObject:
   - component: {fileID: 884292098}
   m_Layer: 0
   m_Name: Board Point 8
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2841,7 +3037,7 @@ GameObject:
   - component: {fileID: 884870512}
   m_Layer: 0
   m_Name: Board Point 18
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2871,7 +3067,7 @@ GameObject:
   - component: {fileID: 903641703}
   m_Layer: 0
   m_Name: Board Point 14
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2901,7 +3097,7 @@ GameObject:
   - component: {fileID: 909304663}
   m_Layer: 0
   m_Name: Board Point 14
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2948,7 +3144,7 @@ Transform:
   m_LocalScale: {x: 7.5, y: 7.5, z: 7.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &920256346
 PrefabInstance:
@@ -2959,7 +3155,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d6aea99df093dd04dad0da3089cac382, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6aea99df093dd04dad0da3089cac382, type: 3}
       propertyPath: m_LocalScale.x
@@ -3034,7 +3230,7 @@ GameObject:
   - component: {fileID: 925374277}
   m_Layer: 0
   m_Name: Board Point 22
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3064,7 +3260,7 @@ GameObject:
   - component: {fileID: 927483520}
   m_Layer: 0
   m_Name: Board Point 23
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3175,7 +3371,7 @@ GameObject:
   - component: {fileID: 933850962}
   m_Layer: 0
   m_Name: Board Point 25
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3205,7 +3401,7 @@ GameObject:
   - component: {fileID: 946499992}
   m_Layer: 0
   m_Name: Board Point 5
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3235,7 +3431,7 @@ GameObject:
   - component: {fileID: 960142310}
   m_Layer: 0
   m_Name: Board Point 22
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3265,7 +3461,7 @@ GameObject:
   - component: {fileID: 994838268}
   m_Layer: 0
   m_Name: Board Point 23
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3295,7 +3491,7 @@ GameObject:
   - component: {fileID: 1008534885}
   m_Layer: 0
   m_Name: Board Point 25
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3325,7 +3521,7 @@ GameObject:
   - component: {fileID: 1020834587}
   m_Layer: 0
   m_Name: Board Point 4
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3353,7 +3549,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1030088193}
-  - component: {fileID: 1030088192}
   m_Layer: 0
   m_Name: Camera for Board Rotation
   m_TagString: Untagged
@@ -3361,18 +3556,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1030088192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030088191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f746b3c087d1e3747979b7b762af220f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1030088193
 Transform:
   m_ObjectHideFlags: 0
@@ -3386,7 +3569,7 @@ Transform:
   m_Children:
   - {fileID: 1880514463}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -0.107, y: 385.049, z: -0.318}
 --- !u!1001 &1057230523
 PrefabInstance:
@@ -3476,7 +3659,7 @@ GameObject:
   - component: {fileID: 1068792592}
   m_Layer: 0
   m_Name: Board Point 14
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3506,7 +3689,7 @@ GameObject:
   - component: {fileID: 1082703699}
   m_Layer: 0
   m_Name: Board Point 17
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3536,7 +3719,7 @@ GameObject:
   - component: {fileID: 1108037851}
   m_Layer: 0
   m_Name: Board Point 21
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3566,7 +3749,7 @@ GameObject:
   - component: {fileID: 1145035308}
   m_Layer: 0
   m_Name: Board Point 25
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3654,7 +3837,7 @@ GameObject:
   - component: {fileID: 1149072428}
   m_Layer: 0
   m_Name: Board Point 10
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3824,7 +4007,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 35.840332, y: 4.7755127}
-  m_SizeDelta: {x: 58.9767, y: 64.165}
+  m_SizeDelta: {x: 58.215, y: 58.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200759155
 MonoBehaviour:
@@ -4031,7 +4214,7 @@ GameObject:
   - component: {fileID: 1286217463}
   m_Layer: 0
   m_Name: Board Point 27
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4061,7 +4244,7 @@ GameObject:
   - component: {fileID: 1296637896}
   m_Layer: 0
   m_Name: Board Point 19
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4091,7 +4274,7 @@ GameObject:
   - component: {fileID: 1297702169}
   m_Layer: 0
   m_Name: Board Point 4
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4121,7 +4304,7 @@ GameObject:
   - component: {fileID: 1299551207}
   m_Layer: 0
   m_Name: Board Point 10
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4151,7 +4334,7 @@ GameObject:
   - component: {fileID: 1303669356}
   m_Layer: 0
   m_Name: Board Point 6
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4181,7 +4364,7 @@ GameObject:
   - component: {fileID: 1309465885}
   m_Layer: 0
   m_Name: Board Point 15
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4211,7 +4394,7 @@ GameObject:
   - component: {fileID: 1323207390}
   m_Layer: 0
   m_Name: Board Point 1
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4241,7 +4424,7 @@ GameObject:
   - component: {fileID: 1342825966}
   m_Layer: 0
   m_Name: Board Point 4
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4271,7 +4454,7 @@ GameObject:
   - component: {fileID: 1375855830}
   m_Layer: 0
   m_Name: Board Point 26
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4301,7 +4484,7 @@ GameObject:
   - component: {fileID: 1389275177}
   m_Layer: 0
   m_Name: Board Point 1
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4331,7 +4514,7 @@ GameObject:
   - component: {fileID: 1401451397}
   m_Layer: 0
   m_Name: Board Point 18
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4408,7 +4591,7 @@ GameObject:
   - component: {fileID: 1411987487}
   m_Layer: 0
   m_Name: Board Point 19
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4438,7 +4621,7 @@ GameObject:
   - component: {fileID: 1420084233}
   m_Layer: 0
   m_Name: Board Point 12
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4468,7 +4651,7 @@ GameObject:
   - component: {fileID: 1442252593}
   m_Layer: 0
   m_Name: Board Point 23
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4498,7 +4681,7 @@ GameObject:
   - component: {fileID: 1442603295}
   m_Layer: 0
   m_Name: Board Point 12
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4552,7 +4735,7 @@ GameObject:
   - component: {fileID: 1448256635}
   m_Layer: 0
   m_Name: Board Point 11
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4676,7 +4859,7 @@ GameObject:
   - component: {fileID: 1550711982}
   m_Layer: 0
   m_Name: Board Point 7
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4800,7 +4983,7 @@ GameObject:
   - component: {fileID: 1580867078}
   m_Layer: 0
   m_Name: Board Point 19
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4830,7 +5013,7 @@ GameObject:
   - component: {fileID: 1590126932}
   m_Layer: 0
   m_Name: Board Point 2
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4939,7 +5122,7 @@ GameObject:
   - component: {fileID: 1600631658}
   m_Layer: 0
   m_Name: Board Point 2
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4969,7 +5152,7 @@ GameObject:
   - component: {fileID: 1605858241}
   m_Layer: 0
   m_Name: Board Point 20
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4999,7 +5182,7 @@ GameObject:
   - component: {fileID: 1615361601}
   m_Layer: 0
   m_Name: Board Point 5
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5029,7 +5212,7 @@ GameObject:
   - component: {fileID: 1634075487}
   m_Layer: 0
   m_Name: Board Point 9
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5048,6 +5231,81 @@ Transform:
   m_Father: {fileID: 1198271333}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1636863149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636863150}
+  - component: {fileID: 1636863152}
+  - component: {fileID: 1636863151}
+  m_Layer: 5
+  m_Name: Dice Place Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1636863150
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636863149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2115536432}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -54}
+  m_SizeDelta: {x: 400, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1636863151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636863149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1636863152
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636863149}
+  m_CullTransparentMesh: 1
 --- !u!1 &1676031439
 GameObject:
   m_ObjectHideFlags: 0
@@ -5059,7 +5317,7 @@ GameObject:
   - component: {fileID: 1676031440}
   m_Layer: 0
   m_Name: Board Point 15
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5183,7 +5441,7 @@ GameObject:
   - component: {fileID: 1681596458}
   m_Layer: 0
   m_Name: Board Point 7
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5202,6 +5460,140 @@ Transform:
   m_Father: {fileID: 1198271333}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1689425701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689425702}
+  - component: {fileID: 1689425704}
+  - component: {fileID: 1689425703}
+  m_Layer: 5
+  m_Name: Hint text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1689425702
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689425701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2115536432}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -396}
+  m_SizeDelta: {x: 565.9012, y: 79.9303}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1689425703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689425701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Hold (Y) to roll
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
+  m_sharedMaterial: {fileID: -6063730933788823365, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 71.5
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 1000
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1689425704
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689425701}
+  m_CullTransparentMesh: 1
 --- !u!1 &1693937717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5213,7 +5605,7 @@ GameObject:
   - component: {fileID: 1693937718}
   m_Layer: 0
   m_Name: Board Point 23
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5318,7 +5710,7 @@ GameObject:
   - component: {fileID: 1713161554}
   m_Layer: 0
   m_Name: Board Point 3
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5427,7 +5819,7 @@ GameObject:
   - component: {fileID: 1760560324}
   m_Layer: 0
   m_Name: Board Point 22
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5457,7 +5849,7 @@ GameObject:
   - component: {fileID: 1786435259}
   m_Layer: 0
   m_Name: Board Point 8
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5511,7 +5903,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 46, y: 4.7755127}
-  m_SizeDelta: {x: 62.8139, y: 64.165}
+  m_SizeDelta: {x: 58.215, y: 58.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818294406
 MonoBehaviour:
@@ -5641,7 +6033,7 @@ GameObject:
   - component: {fileID: 1835487847}
   m_Layer: 0
   m_Name: Board Point 21
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5671,7 +6063,7 @@ GameObject:
   - component: {fileID: 1873238096}
   m_Layer: 0
   m_Name: Board Point 28
-  m_TagString: Untagged
+  m_TagString: Player 1 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5853,7 +6245,7 @@ GameObject:
   - component: {fileID: 1886154399}
   m_Layer: 0
   m_Name: Board Point 5
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5883,7 +6275,7 @@ GameObject:
   - component: {fileID: 1890344028}
   m_Layer: 0
   m_Name: Board Point 27
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6006,7 +6398,7 @@ GameObject:
   - component: {fileID: 1917315972}
   m_Layer: 0
   m_Name: Board Point 1
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6036,7 +6428,7 @@ GameObject:
   - component: {fileID: 1925820892}
   m_Layer: 0
   m_Name: Board Point 16
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6066,7 +6458,7 @@ GameObject:
   - component: {fileID: 1945766053}
   m_Layer: 0
   m_Name: Board Point 3
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6085,6 +6477,81 @@ Transform:
   m_Father: {fileID: 1148847534}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1948558027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948558028}
+  - component: {fileID: 1948558030}
+  - component: {fileID: 1948558029}
+  m_Layer: 5
+  m_Name: Bg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1948558028
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948558027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2115536432}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1948558029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948558027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1948558030
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948558027}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1972628838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6225,14 +6692,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80d9f023baed094db472c53ed7322db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransforms: []
+  playerTransforms:
+  - {fileID: 6953366677014232049}
+  - {fileID: 8791690099882118578}
+  - {fileID: 2486425993310042003}
+  - {fileID: 2905319003649966564}
   gameOverUI: {fileID: 0}
   points: 0
+  currentPlayerTurn: 0
   board: {fileID: 543450652010632297}
   cam: {fileID: 1030088193}
-  boardGameUIManager: {fileID: 1411240519}
+  boardUIManager: {fileID: 1411240519}
   playersLeftInMiniGame: 0
   enemiesLeftInMiniGame: 0
+  diceRollScreen: {fileID: 2115536428}
+  dice: {fileID: 8967152883961397975, guid: 80362a54a29a1dc418cfb3ac9c95114e, type: 3}
   player1HousePoints: 0
   player2HousePoints: 0
   player3HousePoints: 0
@@ -6266,7 +6740,7 @@ GameObject:
   - component: {fileID: 1997878275}
   m_Layer: 0
   m_Name: Board Point 13
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6296,7 +6770,7 @@ GameObject:
   - component: {fileID: 2004308856}
   m_Layer: 0
   m_Name: Board Point 3
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6326,7 +6800,7 @@ GameObject:
   - component: {fileID: 2007605505}
   m_Layer: 0
   m_Name: Board Point 2
-  m_TagString: Untagged
+  m_TagString: Player 4 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6356,7 +6830,7 @@ GameObject:
   - component: {fileID: 2048347615}
   m_Layer: 0
   m_Name: Board Point 28
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6386,7 +6860,7 @@ GameObject:
   - component: {fileID: 2065961814}
   m_Layer: 0
   m_Name: Board Point 9
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6416,7 +6890,7 @@ GameObject:
   - component: {fileID: 2096886297}
   m_Layer: 0
   m_Name: Board Point 8
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6446,7 +6920,7 @@ GameObject:
   - component: {fileID: 2105581693}
   m_Layer: 0
   m_Name: Board Point 7
-  m_TagString: Untagged
+  m_TagString: Player 2 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6465,6 +6939,109 @@ Transform:
   m_Father: {fileID: 1148847534}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2115536428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115536432}
+  - component: {fileID: 2115536431}
+  - component: {fileID: 2115536430}
+  - component: {fileID: 2115536429}
+  m_Layer: 5
+  m_Name: Dice Roll Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2115536429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115536428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2115536430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115536428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &2115536431
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115536428}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &2115536432
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115536428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1948558028}
+  - {fileID: 323582403}
+  - {fileID: 1689425702}
+  - {fileID: 1636863150}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &2118813191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6696,7 +7273,7 @@ GameObject:
   - component: {fileID: 2145560657}
   m_Layer: 0
   m_Name: Board Point 2
-  m_TagString: Untagged
+  m_TagString: Player 3 Board Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6907,10 +7484,10 @@ Transform:
   - {fileID: 6286966385286041794}
   - {fileID: 1228586797287271421}
   - {fileID: 3352797749882174924}
-  - {fileID: 2905319003649966564}
-  - {fileID: 2486425993310042003}
-  - {fileID: 8791690099882118578}
   - {fileID: 6953366677014232049}
+  - {fileID: 8791690099882118578}
+  - {fileID: 2486425993310042003}
+  - {fileID: 2905319003649966564}
   - {fileID: 5297470706453733779}
   - {fileID: 5328006010226816245}
   - {fileID: 8070264780162735196}
@@ -6919,7 +7496,7 @@ Transform:
   - {fileID: 2118813192}
   - {fileID: 1198271333}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &572302428697419642
 GameObject:
@@ -7211,8 +7788,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36e952a127cbfd444bda63162434efb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayPointPositions: []
-  gameManager: {fileID: 0}
+  player1WayPoints: []
+  player2WayPoints: []
+  player3WayPoints: []
+  player4WayPoints: []
+  boardAgent1: {fileID: 7724942791721673037}
+  boardAgent2: {fileID: 8163208890884462346}
+  boardAgent3: {fileID: 3011324754934803755}
+  boardAgent4: {fileID: 2529356754682108768}
+  gameManager: {fileID: 1976604689}
 --- !u!4 &952424495722193585
 Transform:
   m_ObjectHideFlags: 0
@@ -8140,7 +8724,7 @@ Transform:
   - {fileID: 2382202501258400721}
   - {fileID: 2063347147106351294}
   m_Father: {fileID: 543450652010632297}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &2514180595415622218
 Transform:
@@ -8166,6 +8750,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2905319003649966564}
   - component: {fileID: 2529356754682108767}
+  - component: {fileID: 2529356754682108768}
+  - component: {fileID: 2529356754682108769}
   m_Layer: 0
   m_Name: Player 4
   m_TagString: Untagged
@@ -8192,6 +8778,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2529356754682108768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529356754682108766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fc1d212901877448801d74fd3bb2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 2529356754682108769}
+  playerNum: 4
+--- !u!195 &2529356754682108769
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529356754682108766}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.2
+  m_Speed: 6
+  m_Acceleration: 16
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!4 &2537039277346551746
 Transform:
   m_ObjectHideFlags: 0
@@ -8376,7 +8998,7 @@ Transform:
   - {fileID: 889345020345417969}
   - {fileID: 3482887802476505974}
   m_Father: {fileID: 543450652010632297}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2909324488258749464
 GameObject:
@@ -8454,6 +9076,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2486425993310042003}
   - component: {fileID: 3011324754934803754}
+  - component: {fileID: 3011324754934803755}
+  - component: {fileID: 3011324754934803756}
   m_Layer: 0
   m_Name: Player 3
   m_TagString: Untagged
@@ -8480,6 +9104,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3011324754934803755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011324754934803753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fc1d212901877448801d74fd3bb2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 3011324754934803756}
+  playerNum: 3
+--- !u!195 &3011324754934803756
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011324754934803753}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.2
+  m_Speed: 6
+  m_Acceleration: 16
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3015834292076927934
 GameObject:
   m_ObjectHideFlags: 0
@@ -10454,7 +11114,7 @@ Transform:
   - {fileID: 2360520969170031391}
   - {fileID: 3560377724316140344}
   m_Father: {fileID: 543450652010632297}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &6961530529752234329
 GameObject:
@@ -10689,6 +11349,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6953366677014232049}
   - component: {fileID: 7724942791721673036}
+  - component: {fileID: 7724942791721673037}
+  - component: {fileID: 7724942791721673038}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -10715,6 +11377,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7724942791721673037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7724942791721673035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fc1d212901877448801d74fd3bb2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 7724942791721673038}
+  playerNum: 1
+--- !u!195 &7724942791721673038
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7724942791721673035}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.2
+  m_Speed: 6
+  m_Acceleration: 16
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &7738734789718372247
 GameObject:
   m_ObjectHideFlags: 0
@@ -11068,6 +11766,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8791690099882118578}
   - component: {fileID: 8163208890884462345}
+  - component: {fileID: 8163208890884462346}
+  - component: {fileID: 8163208890884462347}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Untagged
@@ -11094,6 +11794,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8163208890884462346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163208890884462344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fc1d212901877448801d74fd3bb2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 8163208890884462347}
+  playerNum: 2
+--- !u!195 &8163208890884462347
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163208890884462344}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.2
+  m_Speed: 6
+  m_Acceleration: 16
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!4 &8185253310754045772
 Transform:
   m_ObjectHideFlags: 0
@@ -11286,7 +12022,7 @@ Transform:
   - {fileID: 8484760898288154461}
   - {fileID: 7481452895085367506}
   m_Father: {fileID: 543450652010632297}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &8845283245570112432
 GameObject:

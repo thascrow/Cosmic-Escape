@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BoardGameUIManager : MonoBehaviour
+public class BoardUIManager : MonoBehaviour
 {
     [SerializeField] public GameObject player1HousePointsUI;
     [SerializeField] public GameObject player2HousePointsUI;
