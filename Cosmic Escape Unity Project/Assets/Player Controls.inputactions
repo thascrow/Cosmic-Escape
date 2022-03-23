@@ -1,0 +1,52 @@
+{
+    "name": "Player Controls",
+    "maps": [
+        {
+            "name": "Board Scene",
+            "id": "34052b13-e1be-431c-b789-504c815c6c44",
+            "actions": [
+                {
+                    "name": "Begin Game",
+                    "type": "Button",
+                    "id": "bc5ed0a3-1b7c-4899-9c4b-325b2406cfba",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Roll Dice",
+                    "type": "Button",
+                    "id": "6fb1bb7c-b4c6-4000-a24a-6f714e7afcbe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f03870e6-d36d-474b-a5cf-8469f2981e01",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Begin Game",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a03f14d6-648c-47bb-8d0b-03810411ca5a",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Dice",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
