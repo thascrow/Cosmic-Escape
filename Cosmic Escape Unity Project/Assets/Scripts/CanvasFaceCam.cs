@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class CanvasFaceCam : MonoBehaviour
 {
-    private Camera cam;
-    [SerializeField] private Canvas canvas;
-
-    private void Start()
-    {
-        cam = Camera.main;
-        canvas.worldCamera = cam;
-    }
+    [SerializeField] private Transform cam;
 
     private void LateUpdate()
     {
-        transform.LookAt(transform.position + cam.transform.forward);
+        transform.LookAt(transform.position + cam.forward);
     }
 }
