@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -65,7 +64,7 @@ public class DamagableCharacter : MonoBehaviour
 
         for (int i = 0; i < killCounts.Count; i++)
         {
-            if(killCounts[i] >= highestKill)
+            if (killCounts[i] >= highestKill)
             {
                 highestKill = killCounts[i];
                 gameWinner = i + 1;
@@ -82,7 +81,7 @@ public class DamagableCharacter : MonoBehaviour
 
     private void Start()
     {
-        if(gameObject.tag == "Player")
+        if (gameObject.tag == "Player")
         {
             gameManager.playersLeftInMiniGame++;
         }

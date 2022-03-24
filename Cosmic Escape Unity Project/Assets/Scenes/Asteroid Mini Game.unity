@@ -2143,11 +2143,14 @@ MonoBehaviour:
   - {fileID: 1604526974}
   gameOverUI: {fileID: 1064773699}
   points: 0
+  currentPlayerTurn: 0
   board: {fileID: 0}
   cam: {fileID: 0}
-  boardGameUIManager: {fileID: 0}
+  boardUIManager: {fileID: 0}
   playersLeftInMiniGame: 0
   enemiesLeftInMiniGame: 0
+  diceRollScreen: {fileID: 0}
+  dice: {fileID: 0}
   player1HousePoints: 0
   player2HousePoints: 0
   player3HousePoints: 0

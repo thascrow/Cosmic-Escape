@@ -1,7 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -12,41 +13,74 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform board;
     [SerializeField] private Transform cam;
     [SerializeField] private BoardUIManager boardUIManager;
-    private bool playerSwitchTurnFirstTimeRun;
-    private int rotationAmount;
-    private int player1RotationY, player2RotationY, player3RotationY, player4RotationY;
     [SerializeField] public int playersLeftInMiniGame;
     [SerializeField] public int enemiesLeftInMiniGame;
-    [SerializeField] private GameObject diceRollScreen;
     [SerializeField] private GameObject dice;
     private bool gameBegun;
-    
+    private bool ableToAdvance;
+    [SerializeField] private BoardManager boardManager;
+    [SerializeField] public BoardAgent boardAgent1, boardAgent2, boardAgent3, boardAgent4;
+    private static GameManager gameManager;
+    public Vector3 storedWayPoint;
+
+
 
     [HideInInspector] public int player1HousePoints, player2HousePoints, player3HousePoints, player4HousePoints;
-    [HideInInspector] public Vector3 player1BoardPos, player2BoardPos, player3BoardPos, player4BoardPos;
 
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-        playerSwitchTurnFirstTimeRun = true;
+
     }
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name != "Zorgon Mini Game")
+        if (SceneManager.GetActiveScene().name == "Board Scene")
         {
-            if (!gameBegun)
+            if (Input.GetButtonDown("Xbox A"))
             {
-                if (Input.GetButtonDown("Xbox A"))
+                if (!gameBegun)
                 {
                     SwitchPlayerTurn(1);
                     gameBegun = true;
                 }
+                if (ableToAdvance == true)
+                {
+                    boardUIManager.diceRollScreen.SetActive(false);
+                }
             }
-            /*if (Input.GetKeyDown(KeyCode.Y) && diceRollScreen.activeSelf == true)
-            {
-               Instantiate(dice, diceRollScreen.transform);
-            }*/
+        }
+    }
+
+    
+
+    public void DiceRolled(int rolledFace)
+    {
+        boardUIManager.diceRollHint.SetActive(false);
+        boardUIManager.diceRolledText.SetActive(true);
+
+        AdvancePlayerOnBoard(rolledFace);
+    }
+
+    private void AdvancePlayerOnBoard(int rolledFace)
+    {
+        ableToAdvance = true;
+
+        switch (currentPlayerTurn)
+        {
+            case 1:
+                SetPoint(boardManager.player1WayPoints[rolledFace].transform.localPosition);
+                print(boardManager.player1WayPoints[rolledFace].transform.localPosition);
+                break;
+            case 2:
+               // boardManager.boardAgent2.GoToWayPoint(boardManager.player2WayPoints[rolledFace]);
+                break;
+            case 3:
+             //   boardManager.boardAgent3.GoToWayPoint(boardManager.player3WayPoints[rolledFace]);
+                break;
+            case 4:
+              //  boardManager.boardAgent4.GoToWayPoint(boardManager.player4WayPoints[rolledFace]);
+                break;
         }
     }
 
@@ -54,80 +88,41 @@ public class GameManager : MonoBehaviour
     {
         currentPlayerTurn = playerSwitchingTo;
 
-        if (playerSwitchTurnFirstTimeRun)
-        {
-            player1RotationY = 90;
-            player2RotationY = 90 * 2;
-            player3RotationY = 90 * 3;
-            player4RotationY = 90 * 4;
-
-            playerSwitchTurnFirstTimeRun = false;
-        }
-        else
-        {
-            player1RotationY = 90;
-            player2RotationY = 90;
-            player3RotationY = 90;
-            player4RotationY = 90;
-        }
-
         switch (playerSwitchingTo)
         {
             case 1:
-                //board.Rotate(new Vector3(0, board.rotation.y + player1RotationY, 0));
-                //MatchCamRotationToBoard();
                 boardUIManager.UpdateSelectedCurrentPlayer(1);
                 ShowDice(playerSwitchingTo);
                 break;
             case 2:
-                //board.Rotate(new Vector3(0, board.rotation.y + player2RotationY, 0));
-                //MatchCamRotationToBoard();
                 boardUIManager.UpdateSelectedCurrentPlayer(2);
+                ShowDice(playerSwitchingTo);
                 break;
             case 3:
-                //board.Rotate(new Vector3(0, board.rotation.y + player3RotationY, 0));
-                //MatchCamRotationToBoard();
                 boardUIManager.UpdateSelectedCurrentPlayer(3);
+                ShowDice(playerSwitchingTo);
                 break;
             case 4:
-                //board.Rotate(new Vector3(0, board.rotation.y + player3RotationY, 0));
-                //MatchCamRotationToBoard();
                 boardUIManager.UpdateSelectedCurrentPlayer(4);
+                ShowDice(playerSwitchingTo);
                 break;
         }
     }
 
     private void ShowDice(int playerSwitchingTo)
     {
-        diceRollScreen.SetActive(true);
-        Instantiate(dice, diceRollScreen.transform);
+        boardUIManager.diceRollScreen.SetActive(true);
+        Instantiate(dice, boardUIManager.diceRollScreen.transform);
+        boardUIManager.beginGameText.SetActive(false);
     }
 
-    private void MatchCamRotationToBoard()
+    public void SetPoint(Vector3 point)
     {
-        cam.transform.eulerAngles = new Vector3(
-            cam.transform.rotation.eulerAngles.x,
-            board.transform.rotation.y,
-            cam.transform.rotation.eulerAngles.z
-        );
+        storedWayPoint = point;
     }
 
-    public void SwitchPlayerTest()
+    public Vector3 GetPoint()
     {
-
-        if (currentPlayerTurn == 4)
-        {
-            SwitchPlayerTurn(1);
-        }
-        else
-        {
-            SwitchPlayerTurn(currentPlayerTurn + 1);
-        }
-    }
-
-    public void GameOver()
-    {
-        gameOverUI.SetActive(true);
-        Time.timeScale = 0;
+        return storedWayPoint;
     }
 }

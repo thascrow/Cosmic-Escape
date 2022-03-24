@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class BoardManager : MonoBehaviour
 {
-    [SerializeField] private List<Transform> player1WayPoints, player2WayPoints, player3WayPoints, player4WayPoints;
-    [SerializeField] private BoardAgent boardAgent1, boardAgent2, boardAgent3, boardAgent4;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] public List<Transform> player1WayPoints, player2WayPoints, player3WayPoints, player4WayPoints;
 
     private void Start()
     {
@@ -15,7 +15,7 @@ public class BoardManager : MonoBehaviour
         PopulateBoardPointPositions(3);
         PopulateBoardPointPositions(4);
 
-        //boardAgent1.GoToWayPoint(player1WayPoints[0]);
+        gameManager.boardAgent1.GoToWayPoint(player1WayPoints[2].transform.localPosition);
     }
 
     private void PopulateBoardPointPositions(int playerNum)

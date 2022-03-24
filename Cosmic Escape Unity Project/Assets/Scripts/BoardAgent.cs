@@ -7,6 +7,8 @@ public class BoardAgent : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private int playerNum;
+    [SerializeField] private Transform newWayPoint;
+    [SerializeField] private GameManager gameManager;
 
     private void Update()
     {
@@ -14,23 +16,29 @@ public class BoardAgent : MonoBehaviour
         {
             agent.isStopped = true;
         }
+
+        if (!agent.hasPath || agent.hasPath)
+        {
+            agent.SetDestination(gameManager.GetPoint());
+
+        }
     }
 
-    public void GoToWayPoint(Transform wayPointPos)
+    public void GoToWayPoint(Vector3 wayPointPos)
     {
         switch (playerNum)
         {
             case (1):
-                agent.SetDestination(wayPointPos.transform.position);
+                print(wayPointPos);
                 break;
             case (2):
-                agent.SetDestination(wayPointPos.transform.position);
+                //agent.SetDestination(wayPointPos.transform.localPosition);
                 break;
             case (3):
-                agent.SetDestination(wayPointPos.transform.position);
+               // agent.SetDestination(wayPointPos.transform.localPosition);
                 break;
             case (4):
-                agent.SetDestination(wayPointPos.transform.position);
+               // agent.SetDestination(wayPointPos.transform.localPosition);
                 break;
         }
     }
