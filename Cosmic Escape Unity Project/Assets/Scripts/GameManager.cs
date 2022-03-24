@@ -37,11 +37,11 @@ public class GameManager : MonoBehaviour
         {
             if (!gameBegun)
             {
-                /*if (Input.GetButtonDown("Xbox A"))
+                if (Input.GetButtonDown("Xbox A"))
                 {
                     SwitchPlayerTurn(1);
                     gameBegun = true;
-                }*/
+                }
             }
             /*if (Input.GetKeyDown(KeyCode.Y) && diceRollScreen.activeSelf == true)
             {
