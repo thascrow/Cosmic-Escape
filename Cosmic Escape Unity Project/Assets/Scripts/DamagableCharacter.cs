@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DamagableCharacter : MonoBehaviour
 {
     [SerializeField] public float health;
-    [SerializeField] private GameManager gameManager;
+    private GameManager gameManager;
     private GameObject playerAttacking;
     [HideInInspector] public int gameWinner;
 
@@ -82,6 +82,8 @@ public class DamagableCharacter : MonoBehaviour
 
     private void Start()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
         if(gameObject.tag == "Player")
         {
             gameManager.playersLeftInMiniGame++;

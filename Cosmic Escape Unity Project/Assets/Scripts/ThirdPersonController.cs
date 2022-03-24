@@ -1,11 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
+[RequireComponent(typeof(CharacterController))]
 public class ThirdPersonController : MonoBehaviour
 {
+    private CharacterController controller;
+    private Vector3 playerVelocity;
+
+    private Vector2 movementInput = Vector2.zero;
+    private Vector2 rotationInput = Vector2.zero;
+
+    [SerializeField] private float playerSpeed;
+    [SerializeField] private float mouseSensitivity;
+    public float fireRate;
+
+    private void Start()
+    {
+        controller = gameObject.GetComponent<CharacterController>();
+    }
+
+    public void OnMove(Vector2 movement)
+    {
+        movementInput = movement;
+    }
+
+    public void OnRotate(Vector2 rotation)
+    {
+        rotationInput = rotation;
+    }
+
+    public void OnShoot(float triggerAmount)
+    {
+        fireRate = triggerAmount;
+        GetComponent<LaserGun>().AutoFire();
+    }
+
+    void Update()
+    {
+        Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
+        controller.Move(move * Time.deltaTime * playerSpeed);
+
+        if(SceneManager.GetActiveScene().name == "Asteroid Mini Game")
+        {
+            if (move != Vector3.zero)
+            {
+                gameObject.transform.forward = move;
+            }
+        }
+        
+        controller.Move(playerVelocity * Time.deltaTime);
+
+        Vector3 rotate = new Vector3(0, rotationInput.x, 0) * Time.deltaTime * mouseSensitivity;
+        transform.Rotate(rotate);
+    }
+
+    /*
     [SerializeField] private CharacterController controller;
     private Vector2 move;
     private Vector2 rotate;
@@ -78,14 +130,12 @@ public class ThirdPersonController : MonoBehaviour
             print("Hello");
             print("Hello");
             print("Hello");
-        }*/
+        }
 
         // rotate player based on inputs
 
 
-
-
-    }
+    
 
     private void OnEnable()
     {
@@ -95,5 +145,5 @@ public class ThirdPersonController : MonoBehaviour
     private void OnDisable()
     {
         inputActions.TPMovement.Disable();
-    }
+    }*/
 }
