@@ -43,7 +43,7 @@ public class ThirdPersonController : MonoBehaviour
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        if(SceneManager.GetActiveScene().name != "Zorgon Mini Game")
+        if(SceneManager.GetActiveScene().name == "Asteroid Mini Game")
         {
             if (move != Vector3.zero)
             {
