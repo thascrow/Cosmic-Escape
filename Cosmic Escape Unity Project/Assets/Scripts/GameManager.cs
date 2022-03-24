@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -21,7 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject diceRollScreen;
     [SerializeField] private GameObject dice;
     private bool gameBegun;
-    private PlayerControls inputActions;
+    
 
     [HideInInspector] public int player1HousePoints, player2HousePoints, player3HousePoints, player4HousePoints;
     [HideInInspector] public Vector3 player1BoardPos, player2BoardPos, player3BoardPos, player4BoardPos;
@@ -32,24 +31,22 @@ public class GameManager : MonoBehaviour
         playerSwitchTurnFirstTimeRun = true;
     }
 
-    private void Awake()
+    private void Update()
     {
-        inputActions = new PlayerControls();
-
-
-
-        if (SceneManager.GetActiveScene().name == "Board Scene")
+        if (SceneManager.GetActiveScene().name != "Zorgon Mini Game")
         {
             if (!gameBegun)
             {
-                inputActions.BoardScene.BeginGame.performed += ctx => SwitchPlayerTurn(1);
-
-                gameBegun = true;
+                /*if (Input.GetButtonDown("Xbox A"))
+                {
+                    SwitchPlayerTurn(1);
+                    gameBegun = true;
+                }*/
             }
-            if(diceRollScreen.activeSelf == true)
+            /*if (Input.GetKeyDown(KeyCode.Y) && diceRollScreen.activeSelf == true)
             {
-                inputActions.BoardScene.RollDice.performed += ctx => Instantiate(dice, diceRollScreen.transform);
-            }
+               Instantiate(dice, diceRollScreen.transform);
+            }*/
         }
     }
 
@@ -132,15 +129,5 @@ public class GameManager : MonoBehaviour
     {
         gameOverUI.SetActive(true);
         Time.timeScale = 0;
-    }
-
-    private void OnEnable()
-    {
-        inputActions.BoardScene.Enable();
-    }
-
-    private void OnDisable()
-    {
-        inputActions.BoardScene.Disable();
     }
 }
