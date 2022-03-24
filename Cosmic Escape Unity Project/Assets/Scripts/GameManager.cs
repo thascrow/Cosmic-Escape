@@ -19,18 +19,13 @@ public class GameManager : MonoBehaviour
     private bool gameBegun;
     private bool ableToAdvance;
     [SerializeField] private BoardManager boardManager;
-    [SerializeField] public BoardAgent boardAgent1, boardAgent2, boardAgent3, boardAgent4;
-    private static GameManager gameManager;
-    public Vector3 storedWayPoint;
-
-
-
+    [SerializeField] public Transform boardAgent1, boardAgent2, boardAgent3, boardAgent4;
+    private int player1CurrentPos, player2CurrentPos, player3CurrentPos, player4CurrentPos;
     [HideInInspector] public int player1HousePoints, player2HousePoints, player3HousePoints, player4HousePoints;
 
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-
     }
 
     private void Update()
@@ -52,8 +47,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
-
     public void DiceRolled(int rolledFace)
     {
         boardUIManager.diceRollHint.SetActive(false);
@@ -69,17 +62,20 @@ public class GameManager : MonoBehaviour
         switch (currentPlayerTurn)
         {
             case 1:
-                SetPoint(boardManager.player1WayPoints[rolledFace].transform.localPosition);
-                print(boardManager.player1WayPoints[rolledFace].transform.localPosition);
+                boardAgent1.transform.position = boardManager.player1WayPoints[player1CurrentPos + rolledFace - 1].transform.position;
+                player1CurrentPos += rolledFace - 1;
                 break;
             case 2:
-               // boardManager.boardAgent2.GoToWayPoint(boardManager.player2WayPoints[rolledFace]);
+                boardAgent2.transform.position = boardManager.player2WayPoints[player2CurrentPos + rolledFace - 1].transform.position;
+                player2CurrentPos += rolledFace - 1; 
                 break;
             case 3:
-             //   boardManager.boardAgent3.GoToWayPoint(boardManager.player3WayPoints[rolledFace]);
+                boardAgent3.transform.position = boardManager.player3WayPoints[player3CurrentPos + rolledFace - 1].transform.position;
+                player3CurrentPos += rolledFace - 1; 
                 break;
             case 4:
-              //  boardManager.boardAgent4.GoToWayPoint(boardManager.player4WayPoints[rolledFace]);
+                boardAgent4.transform.position = boardManager.player4WayPoints[player4CurrentPos + rolledFace - 1].transform.position;
+                player4CurrentPos += rolledFace - 1; 
                 break;
         }
     }
@@ -114,15 +110,5 @@ public class GameManager : MonoBehaviour
         boardUIManager.diceRollScreen.SetActive(true);
         Instantiate(dice, boardUIManager.diceRollScreen.transform);
         boardUIManager.beginGameText.SetActive(false);
-    }
-
-    public void SetPoint(Vector3 point)
-    {
-        storedWayPoint = point;
-    }
-
-    public Vector3 GetPoint()
-    {
-        return storedWayPoint;
     }
 }

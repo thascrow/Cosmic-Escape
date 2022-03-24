@@ -8,14 +8,12 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] public List<Transform> player1WayPoints, player2WayPoints, player3WayPoints, player4WayPoints;
 
-    private void Start()
+    private void Awake()
     {
         PopulateBoardPointPositions(1);
         PopulateBoardPointPositions(2);
         PopulateBoardPointPositions(3);
         PopulateBoardPointPositions(4);
-
-        gameManager.boardAgent1.GoToWayPoint(player1WayPoints[2].transform.localPosition);
     }
 
     private void PopulateBoardPointPositions(int playerNum)

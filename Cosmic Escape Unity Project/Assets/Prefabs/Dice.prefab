@@ -438,6 +438,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bd46533042ea645adf1a2db831a2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceFaces:
+  - {fileID: 8967152883459569650}
+  - {fileID: 8967152884417984006}
+  - {fileID: 8967152883131992477}
+  - {fileID: 8967152883912493244}
+  - {fileID: 8967152883678420472}
+  - {fileID: 8967152883574669894}
 --- !u!1 &8967152884417984006
 GameObject:
   m_ObjectHideFlags: 0
