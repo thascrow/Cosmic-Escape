@@ -2904,8 +2904,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: -0.000012398}
-  m_SizeDelta: {x: 1479.4401, y: 221.0554}
+  m_AnchoredPosition: {x: 0.0000076294, y: -0.00002861}
+  m_SizeDelta: {x: 1123.4623, y: 244.0263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &870935660
 MonoBehaviour:
@@ -2927,7 +2927,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press (A) to begin the game!
+  m_text: Press (A) to begin!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
   m_sharedMaterial: {fileID: -6063730933788823365, guid: 79243ab273718c14db5b344f5ea4847e, type: 2}
@@ -2954,7 +2954,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 122.1
+  m_fontSize: 139.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4574,7 +4574,6 @@ MonoBehaviour:
   player2HousePointsUI: {fileID: 1574782222}
   player3HousePointsUI: {fileID: 278384590}
   player4HousePointsUI: {fileID: 1678816660}
-  diceRollScreenTitle: {fileID: 323582402}
 --- !u!4 &1411240520
 Transform:
   m_ObjectHideFlags: 0
@@ -6520,8 +6519,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -54}
-  m_SizeDelta: {x: -672.3281, y: -202.5905}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948558029
 MonoBehaviour:

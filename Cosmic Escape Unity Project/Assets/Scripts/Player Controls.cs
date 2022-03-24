@@ -59,52 +59,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""TP Movement"",
-            ""id"": ""3cad1f99-e323-45df-91db-b678ce3ba011"",
-            ""actions"": [
-                {
-                    ""name"": ""Rotate"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""90700205-0b61-4203-b9a7-33c001316b3b"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""b4d5d1ee-364d-4721-b0e6-6ec86a1dc350"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""e3f7f735-3755-42d2-a5ba-3b67ec9e9c5d"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8652e669-cf44-4f1f-bf1b-92789cc784bc"",
-                    ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": []
@@ -113,10 +67,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_BoardScene = asset.FindActionMap("Board Scene", throwIfNotFound: true);
         m_BoardScene_BeginGame = m_BoardScene.FindAction("Begin Game", throwIfNotFound: true);
         m_BoardScene_RollDice = m_BoardScene.FindAction("Roll Dice", throwIfNotFound: true);
-        // TP Movement
-        m_TPMovement = asset.FindActionMap("TP Movement", throwIfNotFound: true);
-        m_TPMovement_Rotate = m_TPMovement.FindAction("Rotate", throwIfNotFound: true);
-        m_TPMovement_Move = m_TPMovement.FindAction("Move", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -203,55 +153,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         }
     }
     public BoardSceneActions @BoardScene => new BoardSceneActions(this);
-
-    // TP Movement
-    private readonly InputActionMap m_TPMovement;
-    private ITPMovementActions m_TPMovementActionsCallbackInterface;
-    private readonly InputAction m_TPMovement_Rotate;
-    private readonly InputAction m_TPMovement_Move;
-    public struct TPMovementActions
-    {
-        private @PlayerControls m_Wrapper;
-        public TPMovementActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Rotate => m_Wrapper.m_TPMovement_Rotate;
-        public InputAction @Move => m_Wrapper.m_TPMovement_Move;
-        public InputActionMap Get() { return m_Wrapper.m_TPMovement; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(TPMovementActions set) { return set.Get(); }
-        public void SetCallbacks(ITPMovementActions instance)
-        {
-            if (m_Wrapper.m_TPMovementActionsCallbackInterface != null)
-            {
-                @Rotate.started -= m_Wrapper.m_TPMovementActionsCallbackInterface.OnRotate;
-                @Rotate.performed -= m_Wrapper.m_TPMovementActionsCallbackInterface.OnRotate;
-                @Rotate.canceled -= m_Wrapper.m_TPMovementActionsCallbackInterface.OnRotate;
-                @Move.started -= m_Wrapper.m_TPMovementActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_TPMovementActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_TPMovementActionsCallbackInterface.OnMove;
-            }
-            m_Wrapper.m_TPMovementActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @Rotate.started += instance.OnRotate;
-                @Rotate.performed += instance.OnRotate;
-                @Rotate.canceled += instance.OnRotate;
-                @Move.started += instance.OnMove;
-                @Move.performed += instance.OnMove;
-                @Move.canceled += instance.OnMove;
-            }
-        }
-    }
-    public TPMovementActions @TPMovement => new TPMovementActions(this);
     public interface IBoardSceneActions
     {
         void OnBeginGame(InputAction.CallbackContext context);
         void OnRollDice(InputAction.CallbackContext context);
-    }
-    public interface ITPMovementActions
-    {
-        void OnRotate(InputAction.CallbackContext context);
-        void OnMove(InputAction.CallbackContext context);
     }
 }
