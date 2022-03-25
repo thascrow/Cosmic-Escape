@@ -16,8 +16,10 @@ public class MainMenuController : MonoBehaviour
 
     private void Start()
     {
-        resolutions = Screen.resolutions;
+        Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
 
+        resolutions = Screen.resolutions;
+       
         resolutionDropdown.ClearOptions();
 
         int curResolutionIndex = 0;
@@ -36,6 +38,34 @@ public class MainMenuController : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
+    private void Update()
+    {
+        
+        if (Input.GetButton("Xbox A") && mainMenu.activeInHierarchy)
+        {
+            PlayGame();
+        }
+        if (Input.GetButton("Xbox X") && mainMenu.activeInHierarchy)
+        {
+            Option();
+        }
+        if (Input.GetButton("Xbox Y") && mainMenu.activeInHierarchy)
+        {
+            Credits();
+        }
+        if (Input.GetButton("Xbox B") && mainMenu.activeInHierarchy)
+        {
+            ExitButton();
+        }
+        if (Input.GetButton("Xbox B") && optionMenu.activeInHierarchy)
+        {
+            OptionBackButton();
+        }
+        if (Input.GetButton("Xbox B") && creditsMenu.activeInHierarchy)
+        {
+            CreditsBackButton();
+        }
+    }
 
     public void Credits()
     {

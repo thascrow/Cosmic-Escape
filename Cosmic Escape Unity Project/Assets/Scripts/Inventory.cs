@@ -10,13 +10,14 @@ public class Inventory : MonoBehaviour
 {
     [SerializeField] public List<GameObject> items;
     [SerializeField] public List<Image> uIElements;
-
+    [SerializeField] private Text winText;
     [SerializeField] int points;
 
 
     public void SetPoints(int addPoint)
     {
         points += addPoint;
+
     }
 
     public int GetPoints()
@@ -27,6 +28,7 @@ public class Inventory : MonoBehaviour
     {
         if (points >= 4)
         {
+            winText.text = gameObject.name + " " + "Wins";
             Debug.Log(gameObject.name + " " + "Wins");
         }
     }
