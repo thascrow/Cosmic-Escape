@@ -23,8 +23,7 @@ public class CollectableItem : MonoBehaviour
             inventory.uIElements[sizeOfInventory].gameObject.SetActive(true);
 
             inventory.items.Add(gameObject);
-            gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
-            gameObject.GetComponent<BoxCollider>().enabled = false;
+            Destroy(gameObject);
             
         }
     }

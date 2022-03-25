@@ -2601,7 +2601,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544831446}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5988647, y: 1, z: 3.7171597}
@@ -4412,6 +4412,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1879e8ca10cdf5742a311aff7f696551, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1879e8ca10cdf5742a311aff7f696551, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 1879e8ca10cdf5742a311aff7f696551, type: 3}
@@ -6689,7 +6693,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351564541}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5988647, y: 1, z: 3.7171597}
@@ -8387,7 +8391,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715132183}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5988647, y: 1, z: 3.7171597}
@@ -10574,19 +10578,19 @@ PrefabInstance:
     - target: {fileID: 1672852696370933463, guid: 03fb80cb833acea43a476a54bf412761, type: 3}
       propertyPath: Coll1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 724547622}
     - target: {fileID: 1672852696370933463, guid: 03fb80cb833acea43a476a54bf412761, type: 3}
       propertyPath: Coll2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1279575935}
     - target: {fileID: 1672852696370933463, guid: 03fb80cb833acea43a476a54bf412761, type: 3}
       propertyPath: Coll3
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 349585573}
     - target: {fileID: 1672852696370933463, guid: 03fb80cb833acea43a476a54bf412761, type: 3}
       propertyPath: Coll4
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1715132185}
     - target: {fileID: 1672852696370933465, guid: 03fb80cb833acea43a476a54bf412761, type: 3}
       propertyPath: m_Name
       value: Player1
@@ -10623,19 +10627,19 @@ PrefabInstance:
     - target: {fileID: 2686971228486888460, guid: 82ded3dbbe4fea649a79418a1dfd4fa8, type: 3}
       propertyPath: Coll1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 724547622}
     - target: {fileID: 2686971228486888460, guid: 82ded3dbbe4fea649a79418a1dfd4fa8, type: 3}
       propertyPath: Coll2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1279575935}
     - target: {fileID: 2686971228486888460, guid: 82ded3dbbe4fea649a79418a1dfd4fa8, type: 3}
       propertyPath: Coll3
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 349585573}
     - target: {fileID: 2686971228486888460, guid: 82ded3dbbe4fea649a79418a1dfd4fa8, type: 3}
       propertyPath: Coll4
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1715132185}
     - target: {fileID: 2686971228486888461, guid: 82ded3dbbe4fea649a79418a1dfd4fa8, type: 3}
       propertyPath: winText
       value: 
@@ -10720,19 +10724,19 @@ PrefabInstance:
     - target: {fileID: 4809441889071351542, guid: 7c02468448d68e949b0cfb2db3107c78, type: 3}
       propertyPath: Coll1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 724547622}
     - target: {fileID: 4809441889071351542, guid: 7c02468448d68e949b0cfb2db3107c78, type: 3}
       propertyPath: Coll2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1279575935}
     - target: {fileID: 4809441889071351542, guid: 7c02468448d68e949b0cfb2db3107c78, type: 3}
       propertyPath: Coll3
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 349585573}
     - target: {fileID: 4809441889071351542, guid: 7c02468448d68e949b0cfb2db3107c78, type: 3}
       propertyPath: Coll4
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1715132185}
     - target: {fileID: 4809441889071351543, guid: 7c02468448d68e949b0cfb2db3107c78, type: 3}
       propertyPath: winText
       value: 
@@ -10821,19 +10825,19 @@ PrefabInstance:
     - target: {fileID: 5710468929025408288, guid: 8eb3969ef755ac74f90fcbdcbe8eebf6, type: 3}
       propertyPath: Coll1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 724547622}
     - target: {fileID: 5710468929025408288, guid: 8eb3969ef755ac74f90fcbdcbe8eebf6, type: 3}
       propertyPath: Coll2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1279575935}
     - target: {fileID: 5710468929025408288, guid: 8eb3969ef755ac74f90fcbdcbe8eebf6, type: 3}
       propertyPath: Coll3
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 349585573}
     - target: {fileID: 5710468929025408288, guid: 8eb3969ef755ac74f90fcbdcbe8eebf6, type: 3}
       propertyPath: Coll4
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1715132185}
     - target: {fileID: 5710468929025408289, guid: 8eb3969ef755ac74f90fcbdcbe8eebf6, type: 3}
       propertyPath: winText
       value: 
