@@ -28,6 +28,7 @@ public class Inventory : MonoBehaviour
     {
         if (points >= 4)
         {
+            Time.timeScale = 0;
             winText.text = gameObject.name + " " + "Wins";
             Debug.Log(gameObject.name + " " + "Wins");
         }

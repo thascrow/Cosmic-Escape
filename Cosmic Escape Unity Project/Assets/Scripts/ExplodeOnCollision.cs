@@ -19,4 +19,9 @@ public class ExplodeOnCollision : MonoBehaviour
             }
         }
     }
+
+    private void Update()
+    {
+        Physics.IgnoreLayerCollision(3, 7);
+    }
 }

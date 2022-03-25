@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LaserGun : MonoBehaviour
@@ -14,13 +12,20 @@ public class LaserGun : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private ThirdPersonController tp;
 
+    private void Start()
+    {
+        tp = GetComponent<ThirdPersonController>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(ammo > 0)
+        if (ammo > 0)
         {
             AutoFire();
         }
+
+        Debug.Log("A controller 1 =" + Input.GetButton("Fire1") + " A controller 2 =" + Input.GetButton("Fire2") + " A controller 3 =" + Input.GetButton("Fire3") + " A controller 4 =" + Input.GetButton("Fire4"));
     }
 
     void FireShot(int playerNum)
@@ -94,7 +99,6 @@ public class LaserGun : MonoBehaviour
                 break;
         }
 
-        
 
         ammo -= 1;
     }
@@ -106,14 +110,16 @@ public class LaserGun : MonoBehaviour
         {
             if (Input.GetButton("Fire1"))
             {
+                Debug.Log("Player 1:" + tp.player1 + " Player 2:" + tp.player2 + " Player 3:" + tp.player3 + "Player 4:" + tp.player4);
                 if (autoFireTimer > fireRate)
                 {
                     FireShot(1);
                     autoFireTimer = 0f;
+                    
                 }
             }
         }
-        if (tp.player2)
+         if (tp.player2)
         {
             if (Input.GetButton("Fire2"))
             {
@@ -124,7 +130,7 @@ public class LaserGun : MonoBehaviour
                 }
             }
         }
-        if (tp.player3)
+         if (tp.player3)
         {
             if (Input.GetButton("Fire3"))
             {
@@ -135,7 +141,7 @@ public class LaserGun : MonoBehaviour
                 }
             }
         }
-        if (tp.player4)
+         if (tp.player4)
         {
             if (Input.GetButton("Fire4"))
             {
