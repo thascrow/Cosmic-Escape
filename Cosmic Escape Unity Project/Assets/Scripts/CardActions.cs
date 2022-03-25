@@ -19,14 +19,4 @@ public class CardActions : MonoBehaviour
             return false;
         }
     }
-
-    public void MoveTwoSpacesLoseHousePiece()
-    {
-
-    }
-
-    public void ExtraTurnLoseThreeHousePieces()
-    {
-
-    }
 }
