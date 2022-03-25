@@ -16,6 +16,11 @@ public class BoardManager : MonoBehaviour
         PopulateBoardPointPositions(4);
     }
 
+    private void Start()
+    {
+        gameManager.player1CurrentPos
+    }
+
     private void PopulateBoardPointPositions(int playerNum)
     {
         foreach (GameObject boardPoint in GameObject.FindGameObjectsWithTag("Player " + playerNum + " Board Point"))

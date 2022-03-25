@@ -292,7 +292,7 @@ public class Card : MonoBehaviour
         }
         if (next)
         {
-            ExtraTurnLoseThreeHousePieces();
+            //ExtraTurnLoseThreeHousePieces();
 
             boardUIManager.card1Hint.SetActive(false);
             StartCoroutine(ExecuteAfterTime(3));
@@ -303,25 +303,90 @@ public class Card : MonoBehaviour
 
     public void ExtraTurnLoseThreeHousePieces()
     {
-        gameManager.ShowDice(gameManager.currentPlayerTurn);
+        switch (gameManager.currentPlayerTurn)
+        {
+            case 1:
+                if(gameManager.player1HousePoints >= 3)
+                {
+                    gameManager.player1HousePoints -= 3;
+                    gameManager.ReDoDice(gameManager.currentPlayerTurn);
+                }
+                else
+                {
+                    boardUIManager.card1Hint.SetActive(true);
+                    boardUIManager.card1Hint.GetComponent<TMP_Text>().text = "You don't have enough house points.";
+                }
+                break;
+            case 2:
+                if (gameManager.player2HousePoints >= 3)
+                {
+                    gameManager.player2HousePoints -= 3;
+                    gameManager.ReDoDice(gameManager.currentPlayerTurn);
+                }
+                else
+                {
+                    boardUIManager.card1Hint.SetActive(true);
+                    boardUIManager.card1Hint.GetComponent<TMP_Text>().text = "You don't have enough house points.";
+                }
+                break;
+            case 3:
+                if (gameManager.player3HousePoints >= 3)
+                {
+                    gameManager.player3HousePoints -= 3;
+                    gameManager.ReDoDice(gameManager.currentPlayerTurn);
+                }
+                else
+                {
+                    boardUIManager.card1Hint.SetActive(true);
+                    boardUIManager.card1Hint.GetComponent<TMP_Text>().text = "You don't have enough house points.";
+                }
+                break;
+            case 4:
+                if (gameManager.player4HousePoints >= 3)
+                {
+                    gameManager.player4HousePoints -= 3;
+                    gameManager.ReDoDice(gameManager.currentPlayerTurn);
+                }
+                else
+                {
+                    boardUIManager.card1Hint.SetActive(true);
+                    boardUIManager.card1Hint.GetComponent<TMP_Text>().text = "You don't have enough house points.";
+                }
+                break;
+        }
     }
 
     private void MoveTwoSpacesLoseHousePiece()
     {
-        gameManager.AdvancePlayerOnBoard(2);
         switch (gameManager.currentPlayerTurn)
         {
             case 1:
-                gameManager.player1HousePoints--;
+                if(gameManager.player1HousePoints > 0)
+                {
+                    gameManager.AdvancePlayerOnBoard(2);
+                    gameManager.player1HousePoints--;
+                }
                 break;
             case 2:
-                gameManager.player2HousePoints--;
+                if (gameManager.player2HousePoints > 0)
+                {
+                    gameManager.AdvancePlayerOnBoard(2);
+                    gameManager.player2HousePoints--;
+                }
                 break;
             case 3:
-                gameManager.player3HousePoints--;
+                if (gameManager.player3HousePoints > 0)
+                {
+                    gameManager.AdvancePlayerOnBoard(2);
+                    gameManager.player3HousePoints--;
+                }
                 break;
             case 4:
-                gameManager.player4HousePoints--;
+                if (gameManager.player4HousePoints > 0)
+                {
+                    gameManager.AdvancePlayerOnBoard(2);
+                    gameManager.player4HousePoints--;
+                }
                 break;
         }
     }

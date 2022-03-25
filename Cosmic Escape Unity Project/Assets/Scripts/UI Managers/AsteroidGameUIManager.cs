@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -58,7 +59,23 @@ public class AsteroidGameUIManager : MonoBehaviour
         else if (countdownTimer <= 0)
         {
             timing = false;
-            // Select winner
+            List<GameObject> alivePlayers = new List<GameObject>();
+            
+            foreach(GameObject player in GameObject.FindGameObjectsWithTag("Player"))
+            {
+                alivePlayers.Add(player);
+            }
+
+            if(alivePlayers.Count >= 1)
+            {
+                foreach(GameObject player in alivePlayers)
+                {
+                    PlayerPrefs.SetInt(player.GetComponent<PlayerID>().ToString(), 1);
+                }
+            }
+
+            SceneManager.LoadScene("Board Scene");
+
             // give rewards
             // Move onto mainlevel
         }
