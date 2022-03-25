@@ -22,7 +22,17 @@ public class Dice : MonoBehaviour
                 Roll();
                 hasRolled = true;
 
-                gameManager.DiceRolled(rolledFace);
+                if (!gameManager.testingCards)
+                {
+                    gameManager.DiceRolled(rolledFace);
+                    hasRolled = false;
+                    //Destroy(gameObject);
+                }
+                else
+                {
+                    gameManager.DiceRolled(1);
+                    Destroy(gameObject);
+                }
             }
         }
     }
