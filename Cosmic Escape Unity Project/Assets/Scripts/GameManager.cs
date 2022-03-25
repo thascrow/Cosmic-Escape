@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int playersLeftInMiniGame;
     [SerializeField] public int enemiesLeftInMiniGame;
     [SerializeField] private GameObject dice;
+    [SerializeField] private bool firstTimeSwitch;
     private bool gameBegun;
     private bool ableToAdvance;
     [SerializeField] private BoardManager boardManager;
@@ -35,6 +36,8 @@ public class GameManager : MonoBehaviour
         player2HousePoints = 3;
         player3HousePoints = 3;
         player4HousePoints = 3;
+
+        firstTimeSwitch = true;
     }
 
     private void Update()
@@ -43,7 +46,6 @@ public class GameManager : MonoBehaviour
         boardUIManager.player2HousePoints.text = player2HousePoints.ToString();
         boardUIManager.player3HousePoints.text = player3HousePoints.ToString();
         boardUIManager.player4HousePoints.text = player4HousePoints.ToString();
-
         if (SceneManager.GetActiveScene().name == "Board Scene")
         {
             if (Input.GetButtonDown("Xbox A"))
@@ -131,69 +133,33 @@ public class GameManager : MonoBehaviour
 
     public void SwitchPlayerTurn(int playerSwitchingTo)
     {
-        if (gameBegun)
+        switch (playerSwitchingTo)
         {
-            StartCoroutine(PauseAndShowTurnCompleteMsg(3));
-
-            switch (playerSwitchingTo)
-            {
-                case 1:
-                    boardUIManager.UpdateSelectedCurrentPlayer(1);
-                    currentPlayerTurn = 1;
-                    ShowDice(1);
-                    break;
-                case 2:
-                    boardUIManager.UpdateSelectedCurrentPlayer(2);
-                    currentPlayerTurn = 2;
-                    ShowDice(2);
-                    break;
-                case 3:
-                    boardUIManager.UpdateSelectedCurrentPlayer(3);
-                    currentPlayerTurn = 3;
-                    ShowDice(3);
-                    break;
-                case 4:
-                    boardUIManager.UpdateSelectedCurrentPlayer(4);
-                    currentPlayerTurn = 4;
-                    ShowDice(4);
-                    break;
-                default:
-                    boardUIManager.UpdateSelectedCurrentPlayer(1);
-                    currentPlayerTurn = 1;
-                    ShowDice(1);
-                    break;
-            }
-        }
-        else
-        {
-            switch (playerSwitchingTo)
-            {
-                case 1:
-                    boardUIManager.UpdateSelectedCurrentPlayer(1);
-                    currentPlayerTurn = 1;
-                    ShowDice(1);
-                    break;
-                case 2:
-                    boardUIManager.UpdateSelectedCurrentPlayer(2);
-                    currentPlayerTurn = 2;
-                    ShowDice(2);
-                    break;
-                case 3:
-                    boardUIManager.UpdateSelectedCurrentPlayer(3);
-                    currentPlayerTurn = 3;
-                    ShowDice(3);
-                    break;
-                case 4:
-                    boardUIManager.UpdateSelectedCurrentPlayer(4);
-                    currentPlayerTurn = 4;
-                    ShowDice(4);
-                    break;
-                default:
-                    boardUIManager.UpdateSelectedCurrentPlayer(1);
-                    currentPlayerTurn = 1;
-                    ShowDice(1);
-                    break;
-            }
+            case 1:
+                boardUIManager.UpdateSelectedCurrentPlayer(1);
+                currentPlayerTurn = 1;
+                ShowDice(1);
+                break;
+            case 2:
+                boardUIManager.UpdateSelectedCurrentPlayer(2);
+                currentPlayerTurn = 2;
+                ShowDice(2);
+                break;
+            case 3:
+                boardUIManager.UpdateSelectedCurrentPlayer(3);
+                currentPlayerTurn = 3;
+                ShowDice(3);
+                break;
+            case 4:
+                boardUIManager.UpdateSelectedCurrentPlayer(4);
+                currentPlayerTurn = 4;
+                ShowDice(4);
+                break;
+            default:
+                boardUIManager.UpdateSelectedCurrentPlayer(1);
+                currentPlayerTurn = 1;
+                ShowDice(1);
+                break;
         }
     }
 
