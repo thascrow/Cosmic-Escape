@@ -18,7 +18,10 @@ public class BoardManager : MonoBehaviour
 
     private void Start()
     {
-        gameManager.player1CurrentPos
+        gameManager.AdvancePlayerOnBoard(gameManager.player1CurrentPos);
+        gameManager.AdvancePlayerOnBoard(gameManager.player2CurrentPos);
+        gameManager.AdvancePlayerOnBoard(gameManager.player3CurrentPos);
+        gameManager.AdvancePlayerOnBoard(gameManager.player4CurrentPos);
     }
 
     private void PopulateBoardPointPositions(int playerNum)
